@@ -7,12 +7,27 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
+import  { useState, useEffect } from 'react';
+import GridLoader from "react-spinners/GridLoader";
 
 function App() {
+  const [done, setDone] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+    
+      setDone(true);
+    }, 2000);
+  }, []);
+
 
   return (
-    <>
-    <NavBar/>
+<>
+    {!done ? (
+        <GridLoader class="loadingSpinner" color="#36d7b7" />
+    ) : (
+      <>
+      <NavBar/>
       <Router>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -24,6 +39,9 @@ function App() {
     <Contact/>
     <Footer/>
     </>
+    )}
+    </>
+   
   );
 }
 
