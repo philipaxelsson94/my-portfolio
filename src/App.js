@@ -17,7 +17,7 @@ function App() {
     setTimeout(() => {
     
       setDone(true);
-    }, 1500);
+    }, 1000);
   }, []);
 
 
