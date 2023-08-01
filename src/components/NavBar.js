@@ -126,7 +126,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip>
               <IconButton  sx={{ p: 0 }}>
-              <Button sx={{ color: 'white'}}>
+              <Button href="https://www.linkedin.com/in/philip-axelsson1994/" sx={{ color: 'white'}}>
                 <GitHubIcon fontSize="large"/>
               </Button>
               </IconButton>
