@@ -29,7 +29,6 @@ function Contact(){
                     sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: '#23ff79', mr:"1rem",my: 2, color: '#23ff79', display: 'block'}}>
                 Send me an email
             </Button>
-
         </Container>
 
     )
