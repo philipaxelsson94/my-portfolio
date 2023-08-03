@@ -9,6 +9,7 @@ import Container from '@mui/material/Container';
 import  { useState, useEffect } from 'react';
 import sanityClient from "../client";
 import Grid from '@mui/material/Grid';
+import { motion } from "framer-motion"
 
 
 
@@ -69,6 +70,8 @@ export default function BasicTabs() {
     setValue(newValue);
   };
   return (
+    <motion.div 
+    initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5}}>
     <Container sx={{ pt:'3rem', width: '100%' }}>
       
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -152,5 +155,6 @@ export default function BasicTabs() {
         ))}
       </TabPanel>
     </Container>
+    </motion.div>
   );
 }

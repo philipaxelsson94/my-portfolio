@@ -3,7 +3,6 @@ import Container from '@mui/material/Container';
 
 import MiddleImage from './MiddleImage'
 import Presentation from './Presentation'
-import { motion } from "framer-motion"
 function Home() {
   return (
     <Container sx={{ pt:'3rem', width: '100%' }}>
@@ -20,10 +19,8 @@ function Home() {
        src={require("../Assets/Man_simple.png")}
      />
     */}
-    <motion.div 
-    initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5}}>
+    
     <Presentation/>
-    </motion.div>
      <MiddleImage/>
     </Container>
     
