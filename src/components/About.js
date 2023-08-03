@@ -50,7 +50,6 @@ export default function About() {
                 <Grid item xs={2}>
                 <Chip label="Java" color="success" size="large" />
                 </Grid>
-                
             </Grid>
         </Grid>
       </Grid>
