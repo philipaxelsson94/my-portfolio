@@ -49,7 +49,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            P.AXELSSON
+            P.A
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -110,7 +110,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            P.AXELSSON
+            P.AX
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <Button href="/experience" variant="outlined" sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: '#23ff79', mr:"1rem",my: 2, color: '#23ff79', display: 'block' }}>
