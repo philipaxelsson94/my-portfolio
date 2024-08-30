@@ -35,12 +35,12 @@ export default function ActionAreaCard({ imageurl,title, hp, desc }) {
     <>
     <Card onClick={handleOpen} sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
+       {/* <CardMedia
           component="img"
           height="140"
           image={urlFor(imageurl).width(200).url()}
           alt="green iguana"
-        />
+  />*/}
         <CardContent sx={{ backgroundColor: "#011226" }}>
             <Box sx={{display: 'flex', justifyContent: 'space-between' }}>
                     <Typography sx={{whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden', fontSize: { xs: "1rem", md: "1.5rem"}}} color="white" align="left" variant="h5">
