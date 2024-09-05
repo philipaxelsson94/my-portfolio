@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import imageUrlBuilder from '@sanity/image-url'
@@ -15,8 +15,8 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
+    width: '80%',
+    bgcolor: 'white',
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
@@ -33,15 +33,10 @@ export default function ActionAreaCard({ imageurl,title, hp, desc }) {
     const handleClose = () => setOpen(false);
   return (
     <>
-    <Card onClick={handleOpen} sx={{ maxWidth: 345 }}>
+    <Card onClick={handleOpen} sx={{ maxWidth: 345, backgroundColor: "#2b3f81" }}>
       <CardActionArea>
-       {/* <CardMedia
-          component="img"
-          height="140"
-          image={urlFor(imageurl).width(200).url()}
-          alt="green iguana"
-  />*/}
-        <CardContent sx={{ backgroundColor: "#011226" }}>
+      
+        <CardContent sx={{ backgroundColor: "#2b3f81" }}>
             <Box sx={{display: 'flex', justifyContent: 'space-between' }}>
                     <Typography sx={{whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden', fontSize: { xs: "1rem", md: "1.5rem"}}} color="white" align="left" variant="h5">
                         {title}

@@ -38,21 +38,22 @@ I'm open to Job opportunities where I can contribute, learn and grow. If you hav
             </Typography>
             <Grid container spacing={1}>
                 <Grid item xs={2}>
-                <Chip label="React" color="success" size="large" />
+                <Chip label="React" color="primary" size="large" />
                 </Grid>
                 <Grid item xs={2}>
-                <Chip label="HTML" color="success" size="large" />
+                <Chip label="HTML" color="primary" size="large" />
                 </Grid>
                 <Grid item xs={2}>
-                <Chip label="CSS" color="success" size="large" />
+                <Chip label="CSS" color="primary" size="large" />
                 </Grid>
                 <Grid item xs={2}>
-                <Chip label="Figma" color="success" size="large" />
-                </Grid><Grid item xs={2}>
-                <Chip label="Python" color="success" size="large" />
+                <Chip label="Figma" color="primary" size="large" />
                 </Grid>
                 <Grid item xs={2}>
-                <Chip label="Java" color="success" size="large" />
+                <Chip label="Python" color="primary" size="large" />
+                </Grid>
+                <Grid item xs={2}>
+                <Chip label="Java" color="primary" size="large" />
                 </Grid>
             </Grid>
         </Grid>

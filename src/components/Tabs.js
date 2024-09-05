@@ -89,7 +89,7 @@ export default function BasicTabs() {
       <Grid container spacing={2}>
         
         {courses.filter(course => course.year === "one").map(course => (
-            <Grid item xs={6} sm={6} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={4} lg={4}>
                 <Card key={course.title}
                 imageurl={course.imageurl}
                 title={course.title}
@@ -105,7 +105,7 @@ export default function BasicTabs() {
       <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
       {courses.filter(course => course.year === "two").map(course => (
-            <Grid item xs={6} sm={6} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={4} lg={4}>
                 <Card key={course.title}
                 imageurl={course.imageurl}
                 title={course.title}
@@ -118,9 +118,11 @@ export default function BasicTabs() {
         </Box>
       </TabPanel>
       
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={1}>
+      <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
       {courses.filter(course => course.year === "three").map(course => (
-            <Grid item xs={6} sm={6} md={3} lg={3}>
+            <Grid item xs={12} sm={12} md={4} lg={4}>
                 <Card key={course.title}
                 imageurl={course.imageurl}
                 title={course.title}
@@ -129,10 +131,12 @@ export default function BasicTabs() {
                 </Card>
             </Grid>
         ))}
+        </Grid>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={2}>
       {courses.filter(course => course.year === "four").map(course => (
-            <Grid item xs={6} sm={6} md={3} lg={3}>
+            <Grid item xs={12} sm={12} md={3} lg={3}>
                 <Card key={course.title}
                 imageurl={course.imageurl}
                 title={course.title}
@@ -144,7 +148,7 @@ export default function BasicTabs() {
       </TabPanel>
       <TabPanel value={value} index={2}>
       {courses.filter(course => course.year === "five").map(course => (
-            <Grid item xs={6} sm={6} md={3} lg={3}>
+            <Grid item xs={12} sm={12} md={3} lg={3}>
                 <Card key={course.title}
                 imageurl={course.imageurl}
                 title={course.title}
