@@ -106,20 +106,20 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: '#23ff79',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
             P.AX
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <Button href="/experience" variant="outlined" sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: '#23ff79', mr:"1rem",my: 2, color: '#23ff79', display: 'block' }}>
+              <Button href="/experience" variant="outlined" sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: 'white', mr:"1rem",my: 2, color: 'white', display: 'block' }}>
                 Experience
               </Button>
-              <Button href="/courses" variant="outlined" sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: '#23ff79', mr:"1rem",my: 2, color: '#23ff79', display: 'block' }}>
+              <Button href="/courses" variant="outlined" sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: 'white', mr:"1rem",my: 2, color: 'white', display: 'block' }}>
                 Courses
               </Button>
-              <Button href="/projects" variant="outlined" sx={{  ":hover": {color: "white",borderColor: 'white'},borderColor: '#23ff79', my: 2, color: '#23ff79', display: 'block' }}>
+              <Button href="/projects" variant="outlined" sx={{  ":hover": {color: "white",borderColor: 'white'},borderColor: 'white', my: 2, color: 'white', display: 'block' }}>
                 Projects
               </Button>
           </Box>

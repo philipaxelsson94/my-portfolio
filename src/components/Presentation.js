@@ -16,18 +16,14 @@ export default function Presentation() {
       </Typography>
       <Typography  variant="h6" sx={{
           fontWeight: 700,
-          color: 'white',
+          color: 'black',
           }}>
       I'm an civil engineer in media technology with a master in interaction design.<br/>
       </Typography>
-      <Button variant="outlined" sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: '#23ff79', mr:"1rem",my: 2, color: '#23ff79'}}
+      <Button variant="outlined" sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: 'black', mr:"1rem",my: 2, color: 'black'}}
       href={cv} target="_blank">
           Download my resumé
           </Button>
-    
-    </Container>
-    
-    
-    
+    </Container>  
   )
 }

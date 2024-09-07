@@ -17,7 +17,7 @@ function Contact(){
             </Typography>
             <Typography variant="p" sx={{
                 fontWeight: 500,
-                color: 'white',
+                color: 'black',
                 fontSize:'1.2rem'
                 }}>
                 Get to know me better by starting a conversation.<br/>
