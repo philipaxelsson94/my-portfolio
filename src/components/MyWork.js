@@ -1,6 +1,5 @@
 import React from "react";
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
+
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
@@ -12,12 +11,6 @@ import Button from '@mui/material/Button';
 
 function MyWork() {
 
-  const Item = styled(Paper)(() => ({
-    backgroundColor: '#98d6a9',
-    padding: 8,
-    textAlign: 'center',
-    color: 'black',
-  }));
 
   return (
     <Container sx={{mt:10, mb:10}}>

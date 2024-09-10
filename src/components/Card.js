@@ -4,8 +4,7 @@ import CardContent from '@mui/material/CardContent';
 
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import imageUrlBuilder from '@sanity/image-url'
-import sanityClient from "../client";
+
 import Chip from '@mui/material/Chip';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -21,13 +20,9 @@ const style = {
     boxShadow: 24,
     p: 4,
   };
-const builder = imageUrlBuilder(sanityClient)
 
-function urlFor(source) {
-  return builder.image(source)
-}
 
-export default function ActionAreaCard({ imageurl,title, hp, desc }) {
+export default function ActionAreaCard({title, hp, desc }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
