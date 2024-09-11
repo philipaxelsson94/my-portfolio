@@ -21,7 +21,7 @@ export default function About() {
             <Typography variant="h6" 
                 sx={{
                     fontWeight: 800,
-                    color: 'black',
+                    color: 'white',
                     }}>
                     I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
 

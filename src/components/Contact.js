@@ -26,7 +26,7 @@ function Contact(){
             </Typography>
             <Button onClick={() => window.location = 'philipaxelaxelsson@gmail.com'}
             variant="outlined"
-                    sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: '#23ff79', mr:"1rem",my: 2, color: '#23ff79', display: 'block'}}>
+                    sx={{ ":hover": {color: "white",borderColor: 'white'}, borderColor: 'black', mr:"1rem",my: 2, color: 'black', display: 'block'}}>
                 Send me an email
             </Button>
         </Container>
