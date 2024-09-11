@@ -3,11 +3,10 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
 
 export default function About() {
 	return (
@@ -16,48 +15,84 @@ export default function About() {
 				<Grid item md={4} xs={12}>
 					<Card>
 						<CardActionArea>
-							<CardMedia
-								component="img"
-								height="140"
-								src={require("../Assets/lxa.png")}
-								alt="green iguana"
-							/>
+							<Stack
+								sx={{
+									mt: 4,
+									mb: 4,
+									justifyContent: "center",
+									alignItems: "center",
+								}}
+								direction="row"
+								spacing={2}
+							>
+								<Avatar
+									alt="UX/UI"
+									src={require("../Assets/ui-ux.png")}
+									sx={{ width: 80, height: 80 }}
+								/>
+							</Stack>
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
-									LXA The Label
+								<Typography
+									sx={{ textAlign: "center" }}
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
+									Frontend Developer
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
-								<Grid container>
-									<Grid item xs={6}>
-										<Button
-											onClick={() =>
-												(window.location = "https://lxathelabel.com/")
-											}
-											variant="outlined"
-											sx={{
-												":hover": { color: "white", borderColor: "white" },
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
+
+								<div sx={{ my: 1, mx: "auto", p: 2 }}>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											my: 3,
+											pt: 1,
+											pb: 1,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography sx={{ pl: 4 }} noWrap>
+											React
+										</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/react.png")}
+											sx={{ pr: 4, width: 50, height: 50 }}
 										/>
-									</Grid>
-								</Grid>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography sx={{ pl: 4 }} noWrap>
+											HTML
+										</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/html.png")}
+											sx={{ pr: 4, width: 50, height: 50 }}
+										/>
+									</Stack>
+								</div>
 							</CardContent>
 						</CardActionArea>
 					</Card>
@@ -66,49 +101,35 @@ export default function About() {
 				<Grid item md={4} xs={12}>
 					<Card>
 						<CardActionArea>
-							<CardMedia
-								component="img"
-								height="140"
-								src={require("../Assets/sanne.png")}
-								alt="green iguana"
-							/>
+							<Stack
+								sx={{
+									mt: 4,
+									mb: 4,
+									justifyContent: "center",
+									alignItems: "center",
+								}}
+								direction="row"
+								spacing={2}
+							>
+								<Avatar
+									alt="UX/UI"
+									src={require("../Assets/ui-ux.png")}
+									sx={{ width: 80, height: 80 }}
+								/>
+							</Stack>
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
-									Sanne Alexandra
+								<Typography
+									sx={{ textAlign: "center" }}
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
+									Frontend Developer
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
-
-								<Grid container>
-									<Grid item xs={6}>
-										<Button
-											onClick={() =>
-												(window.location = "https://lxathelabel.com/")
-											}
-											variant="outlined"
-											sx={{
-												":hover": { color: "white", borderColor: "white" },
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
-										/>
-									</Grid>
-								</Grid>
 							</CardContent>
 						</CardActionArea>
 					</Card>
@@ -117,49 +138,35 @@ export default function About() {
 				<Grid item md={4} xs={12}>
 					<Card>
 						<CardActionArea>
-							<CardMedia
-								component="img"
-								height="140"
-								src={require("../Assets/lecap.png")}
-								alt="green iguana"
-							/>
+							<Stack
+								sx={{
+									mt: 4,
+									mb: 4,
+									justifyContent: "center",
+									alignItems: "center",
+								}}
+								direction="row"
+								spacing={2}
+							>
+								<Avatar
+									alt="UX/UI"
+									src={require("../Assets/ui-ux.png")}
+									sx={{ width: 80, height: 80 }}
+								/>
+							</Stack>
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
-									Le Capsole
+								<Typography
+									sx={{ textAlign: "center" }}
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
+									Frontend Developer
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
-
-								<Grid container>
-									<Grid item xs={6}>
-										<Button
-											onClick={() =>
-												(window.location = "https://lecapsole.com/")
-											}
-											variant="outlined"
-											sx={{
-												":hover": { color: "white", borderColor: "white" },
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
-										/>
-									</Grid>
-								</Grid>
 							</CardContent>
 						</CardActionArea>
 					</Card>
