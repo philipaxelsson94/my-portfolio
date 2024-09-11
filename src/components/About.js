@@ -1,65 +1,170 @@
-import React from 'react'
-import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Chip from '@mui/material/Chip';
+import React from "react";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import CardActionArea from "@mui/material/CardActionArea";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 
 export default function About() {
-  return (
-<div className="aboutUs-container">
-    <Container sx={{ flexGrow: 1}}>
-      <Grid container spacing={2}>
-        <Grid xs={12} md={8}>
-            <Typography 
-                variant="h2" 
-                sx={{
-                    fontWeight: 700,
-                    color: '#5a4dcf',
-                    }}>
-                    Who Am I?
-            </Typography>
-            <Typography variant="h6" 
-                sx={{
-                    fontWeight: 800,
-                    color: 'white',
-                    }}>
-                    I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+	return (
+		<Container sx={{ mt: 10, mb: 10 }}>
+			<Grid container spacing={0}>
+				<Grid item md={4} xs={12}>
+					<Card>
+						<CardActionArea>
+							<CardMedia
+								component="img"
+								height="140"
+								src={require("../Assets/lxa.png")}
+								alt="green iguana"
+							/>
+							<CardContent>
+								<Typography gutterBottom variant="h5" component="div">
+									LXA The Label
+								</Typography>
+								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+									Lizards are a widespread group of squamate reptiles, with over
+									6,000 species, ranging across all continents except Antarctica
+								</Typography>
+								<Grid container>
+									<Grid item xs={6}>
+										<Button
+											onClick={() =>
+												(window.location = "https://lxathelabel.com/")
+											}
+											variant="outlined"
+											sx={{
+												":hover": { color: "white", borderColor: "white" },
+												borderColor: "black",
+												mr: "1rem",
+												my: 2,
+												color: "black",
+												display: "block",
+											}}
+										>
+											Visit website
+										</Button>
+									</Grid>
+									<Grid display="flex" justifyContent="flex-end" item xs={6}>
+										<Box
+											component="img"
+											sx={{ pt: 2, pb: 2, width: "100px" }}
+											alt=""
+											src={require("../Assets/shopifylogo.png")}
+										/>
+									</Grid>
+								</Grid>
+							</CardContent>
+						</CardActionArea>
+					</Card>
+				</Grid>
 
-I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming
+				<Grid item md={4} xs={12}>
+					<Card>
+						<CardActionArea>
+							<CardMedia
+								component="img"
+								height="140"
+								src={require("../Assets/sanne.png")}
+								alt="green iguana"
+							/>
+							<CardContent>
+								<Typography gutterBottom variant="h5" component="div">
+									Sanne Alexandra
+								</Typography>
+								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+									Lizards are a widespread group of squamate reptiles, with over
+									6,000 species, ranging across all continents except Antarctica
+								</Typography>
 
-I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
-            </Typography>
-        </Grid>
-        <Grid xs={12} md={4}>
-            <Typography variant="h2" sx={{
-                fontWeight: 700,
-                color: '#5a4dcf',
-                }}>My Skills
-            </Typography>
-            <Grid container spacing={1}>
-                <Grid item xs={2}>
-                <Chip label="React" color="primary" size="large" />
-                </Grid>
-                <Grid item xs={2}>
-                <Chip label="HTML" color="primary" size="large" />
-                </Grid>
-                <Grid item xs={2}>
-                <Chip label="CSS" color="primary" size="large" />
-                </Grid>
-                <Grid item xs={2}>
-                <Chip label="Figma" color="primary" size="large" />
-                </Grid>
-                <Grid item xs={2}>
-                <Chip label="Python" color="primary" size="large" />
-                </Grid>
-                <Grid item xs={2}>
-                <Chip label="Java" color="primary" size="large" />
-                </Grid>
-            </Grid>
-        </Grid>
-      </Grid>
-    </Container>
-</div>
-  
-  )
+								<Grid container>
+									<Grid item xs={6}>
+										<Button
+											onClick={() =>
+												(window.location = "https://lxathelabel.com/")
+											}
+											variant="outlined"
+											sx={{
+												":hover": { color: "white", borderColor: "white" },
+												borderColor: "black",
+												mr: "1rem",
+												my: 2,
+												color: "black",
+												display: "block",
+											}}
+										>
+											Visit website
+										</Button>
+									</Grid>
+									<Grid display="flex" justifyContent="flex-end" item xs={6}>
+										<Box
+											component="img"
+											sx={{ pt: 2, pb: 2, width: "100px" }}
+											alt=""
+											src={require("../Assets/shopifylogo.png")}
+										/>
+									</Grid>
+								</Grid>
+							</CardContent>
+						</CardActionArea>
+					</Card>
+				</Grid>
+
+				<Grid item md={4} xs={12}>
+					<Card>
+						<CardActionArea>
+							<CardMedia
+								component="img"
+								height="140"
+								src={require("../Assets/lecap.png")}
+								alt="green iguana"
+							/>
+							<CardContent>
+								<Typography gutterBottom variant="h5" component="div">
+									Le Capsole
+								</Typography>
+								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+									Lizards are a widespread group of squamate reptiles, with over
+									6,000 species, ranging across all continents except Antarctica
+								</Typography>
+
+								<Grid container>
+									<Grid item xs={6}>
+										<Button
+											onClick={() =>
+												(window.location = "https://lecapsole.com/")
+											}
+											variant="outlined"
+											sx={{
+												":hover": { color: "white", borderColor: "white" },
+												borderColor: "black",
+												mr: "1rem",
+												my: 2,
+												color: "black",
+												display: "block",
+											}}
+										>
+											Visit website
+										</Button>
+									</Grid>
+									<Grid display="flex" justifyContent="flex-end" item xs={6}>
+										<Box
+											component="img"
+											sx={{ pt: 2, pb: 2, width: "100px" }}
+											alt=""
+											src={require("../Assets/shopifylogo.png")}
+										/>
+									</Grid>
+								</Grid>
+							</CardContent>
+						</CardActionArea>
+					</Card>
+				</Grid>
+			</Grid>
+		</Container>
+	);
 }
