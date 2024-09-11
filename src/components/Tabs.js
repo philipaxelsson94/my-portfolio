@@ -77,13 +77,16 @@ export default function BasicTabs() {
 					<Tabs
 						value={value}
 						onChange={handleChange}
-						aria-label="basic tabs example"
+						variant="scrollable"
+						scrollButtons
+						allowScrollButtonsMobile
+						aria-label="scrollable force tabs example"
 					>
-						<Tab sx={{ color: "#23ff79" }} label="Year 1" {...a11yProps(0)} />
-						<Tab sx={{ color: "#23ff79" }} label="Year 2" {...a11yProps(1)} />
-						<Tab sx={{ color: "#23ff79" }} label="Year 3" {...a11yProps(2)} />
-						<Tab sx={{ color: "#23ff79" }} label="Year 4" {...a11yProps(2)} />
-						<Tab sx={{ color: "#23ff79" }} label="Year 5" {...a11yProps(2)} />
+						<Tab sx={{ color: "black" }} label="Year 1" {...a11yProps(0)} />
+						<Tab sx={{ color: "black" }} label="Year 2" {...a11yProps(1)} />
+						<Tab sx={{ color: "black" }} label="Year 3" {...a11yProps(2)} />
+						<Tab sx={{ color: "black" }} label="Year 4" {...a11yProps(2)} />
+						<Tab sx={{ color: "black" }} label="Year 5" {...a11yProps(2)} />
 					</Tabs>
 				</Box>
 
@@ -126,7 +129,7 @@ export default function BasicTabs() {
 					</Box>
 				</TabPanel>
 
-				<TabPanel value={value} index={1}>
+				<TabPanel value={value} index={2}>
 					<Box sx={{ flexGrow: 1 }}>
 						<Grid container spacing={2}>
 							{courses
@@ -145,35 +148,43 @@ export default function BasicTabs() {
 						</Grid>
 					</Box>
 				</TabPanel>
-				<TabPanel value={value} index={2}>
-					{courses
-						.filter((course) => course.year === "four")
-						.map((course) => (
-							<Grid item xs={12} sm={12} md={3} lg={3}>
-								<Card
-									key={course.title}
-									imageurl={course.imageurl}
-									title={course.title}
-									hp={course.hp}
-									desc={course.desc}
-								></Card>
-							</Grid>
-						))}
+				<TabPanel value={value} index={3}>
+					<Box sx={{ flexGrow: 1 }}>
+						<Grid container spacing={2}>
+							{courses
+								.filter((course) => course.year === "four")
+								.map((course) => (
+									<Grid item xs={12} sm={12} md={4} lg={4}>
+										<Card
+											key={course.title}
+											imageurl={course.imageurl}
+											title={course.title}
+											hp={course.hp}
+											desc={course.desc}
+										></Card>
+									</Grid>
+								))}
+						</Grid>
+					</Box>
 				</TabPanel>
-				<TabPanel value={value} index={2}>
-					{courses
-						.filter((course) => course.year === "five")
-						.map((course) => (
-							<Grid item xs={12} sm={12} md={3} lg={3}>
-								<Card
-									key={course.title}
-									imageurl={course.imageurl}
-									title={course.title}
-									hp={course.hp}
-									desc={course.desc}
-								></Card>
-							</Grid>
-						))}
+				<TabPanel value={value} index={4}>
+					<Box sx={{ flexGrow: 1 }}>
+						<Grid container spacing={2}>
+							{courses
+								.filter((course) => course.year === "five")
+								.map((course) => (
+									<Grid item xs={12} sm={12} md={4} lg={4}>
+										<Card
+											key={course.title}
+											imageurl={course.imageurl}
+											title={course.title}
+											hp={course.hp}
+											desc={course.desc}
+										></Card>
+									</Grid>
+								))}
+						</Grid>
+					</Box>
 				</TabPanel>
 			</Container>
 		</motion.div>
