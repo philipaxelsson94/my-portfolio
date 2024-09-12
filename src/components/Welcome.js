@@ -4,6 +4,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 import Box from "@mui/material/Box";
+import { green } from "@mui/material/colors";
 
 export default function Welcome() {
 	return (
@@ -19,10 +20,10 @@ export default function Welcome() {
 							variant="h1"
 							sx={{
 								fontWeight: 700,
-								color: "#5a4dcf",
+								color: "#272160",
 							}}
 						>
-							WELCOME.
+							<span style={{ color: "#c7e1f3" }}>&lt;/&gt;</span>WELCOME.
 						</Typography>
 
 						<Typography

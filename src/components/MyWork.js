@@ -14,7 +14,7 @@ function MyWork() {
 		<Container sx={{ mt: 10, mb: 10 }}>
 			<Grid container spacing={4}>
 				<Grid item md={4} xs={12}>
-					<Card elevation={3} sx={{ maxWidth: 345 }}>
+					<Card elevation={3}>
 						<CardActionArea>
 							<CardMedia
 								component="img"
@@ -64,7 +64,7 @@ function MyWork() {
 				</Grid>
 
 				<Grid item md={4} xs={12}>
-					<Card elevation={3} sx={{ maxWidth: 345 }}>
+					<Card elevation={3}>
 						<CardActionArea>
 							<CardMedia
 								component="img"
@@ -115,7 +115,7 @@ function MyWork() {
 				</Grid>
 
 				<Grid item md={4} xs={12}>
-					<Card elevation={3} sx={{ maxWidth: 345 }}>
+					<Card elevation={3}>
 						<CardActionArea>
 							<CardMedia
 								component="img"
