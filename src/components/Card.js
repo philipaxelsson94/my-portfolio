@@ -39,7 +39,7 @@ export default function ActionAreaCard({ title, hp, desc }) {
 									whiteSpace: "nowrap",
 									textOverflow: "ellipsis",
 									overflow: "hidden",
-									fontSize: { xs: "1rem", md: "1.5rem" },
+									fontSize: { xs: "0.8rem", md: "1.2rem" },
 								}}
 								color="white"
 								align="left"
