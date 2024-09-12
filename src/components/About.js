@@ -56,7 +56,7 @@ export default function About() {
 										variant="h6"
 										component="div"
 									>
-										Technologies
+										Technologies I use
 									</Typography>
 									<Stack
 										spacing={2}
@@ -147,6 +147,29 @@ export default function About() {
 										<Avatar
 											alt="react"
 											src={require("../Assets/github.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>VS code</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/vscode.png")}
 											sx={{ width: 50, height: 50 }}
 										/>
 									</Stack>

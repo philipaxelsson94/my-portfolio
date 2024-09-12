@@ -1,16 +1,16 @@
 import * as React from "react";
 
-import MiddleImage from "./MiddleImage";
-import Presentation from "./Presentation";
 import About from "./About";
 import MyWork from "./MyWork";
 import Welcome from "./Welcome";
+import Projects from "./Projects";
 
 function Home() {
 	return (
 		<>
 			<Welcome />
 			<MyWork />
+			<Projects />
 			<About />
 		</>
 	);

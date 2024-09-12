@@ -45,9 +45,8 @@ function MyWork() {
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
 										<Button
-											onClick={() =>
-												(window.location = "https://lxathelabel.com/")
-											}
+											href="https://lxathelabel.com/"
+											target="_blank"
 											variant="outlined"
 											sx={{
 												":hover": { color: "white", borderColor: "white" },
@@ -96,9 +95,8 @@ function MyWork() {
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
 										<Button
-											onClick={() =>
-												(window.location = "https://lxathelabel.com/")
-											}
+											href="https://sannealexandra.com/"
+											target="_blank"
 											variant="outlined"
 											sx={{
 												":hover": { color: "white", borderColor: "white" },
@@ -147,9 +145,8 @@ function MyWork() {
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
 										<Button
-											onClick={() =>
-												(window.location = "https://lecapsole.com/")
-											}
+											href="https://lecapsole.com/"
+											target="_blank"
 											variant="outlined"
 											sx={{
 												":hover": { color: "white", borderColor: "white" },
