@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import CardActionArea from "@mui/material/CardActionArea";
+
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
@@ -13,266 +13,426 @@ export default function About() {
 	return (
 		<Box
 			className="about-container"
-			sx={{ mb: 8, pt: 4, pb: 4, bgcolor: "#342342" }}
+			sx={{ mb: 8, pt: 4, pb: 4, bgcolor: "#c7e1f342" }}
 		>
 			<Container sx={{ mt: 10, mb: 10 }}>
 				<Grid container spacing={0}>
 					<Grid item md={4} xs={12}>
-						<Card>
-							<CardActionArea>
-								<Stack
-									sx={{
-										mt: 4,
-										mb: 4,
-										justifyContent: "center",
-										alignItems: "center",
-									}}
-									direction="row"
-									spacing={2}
+						<Card style={{ height: "100%" }}>
+							<Stack
+								sx={{
+									mt: 4,
+									mb: 4,
+									justifyContent: "center",
+									alignItems: "center",
+								}}
+								direction="row"
+								spacing={2}
+							>
+								<Avatar
+									alt="UX/UI"
+									src={require("../Assets/frontend2.png")}
+									sx={{ width: 80, height: 80 }}
+								/>
+							</Stack>
+							<CardContent>
+								<Typography
+									sx={{ textAlign: "center" }}
+									gutterBottom
+									variant="h5"
+									component="div"
 								>
-									<Avatar
-										alt="UX/UI"
-										src={require("../Assets/frontend2.png")}
-										sx={{ width: 80, height: 80 }}
-									/>
-								</Stack>
-								<CardContent>
+									Frontend Developer
+								</Typography>
+								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+									Lizards are a widespread group of squamate reptiles, with over
+									6,000 species, ranging across all continents except Antarctica
+								</Typography>
+
+								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
-										sx={{ textAlign: "center" }}
+										sx={{ textAlign: "center", color: "#272160" }}
 										gutterBottom
-										variant="h5"
+										variant="h6"
 										component="div"
 									>
-										Frontend Developer
+										Technologies
 									</Typography>
-									<Typography variant="body2" sx={{ color: "text.secondary" }}>
-										Lizards are a widespread group of squamate reptiles, with
-										over 6,000 species, ranging across all continents except
-										Antarctica
-									</Typography>
-
-									<div sx={{ my: 1, mx: "auto", p: 2 }}>
-										<Stack
-											spacing={2}
-											direction="row"
-											sx={{
-												my: 3,
-												pt: 1,
-												pb: 1,
-												pr: 4,
-												pl: 4,
-												justifyContent: "space-between",
-												alignItems: "center",
-												bgcolor: "#f9f9f9",
-												boxShadow: 1,
-												borderRadius: 2,
-											}}
-										>
-											<Typography noWrap>React</Typography>
-											<Avatar
-												alt="react"
-												src={require("../Assets/react.png")}
-												sx={{ width: 50, height: 50 }}
-											/>
-										</Stack>
-										<Stack
-											spacing={2}
-											direction="row"
-											sx={{
-												mt: 3,
-												pt: 1,
-												pb: 1,
-												pr: 4,
-												pl: 4,
-												justifyContent: "space-between",
-												alignItems: "center",
-												bgcolor: "#f9f9f9",
-												boxShadow: 1,
-												borderRadius: 2,
-											}}
-										>
-											<Typography noWrap>HTML</Typography>
-											<Avatar
-												alt="react"
-												src={require("../Assets/html.png")}
-												sx={{ width: 50, height: 50 }}
-											/>
-										</Stack>
-									</div>
-								</CardContent>
-							</CardActionArea>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											my: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>React</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/react2.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>HTML</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/html.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>CSS</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/css.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>Github</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/github.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>Sanity</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/sanity.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>Netlify</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/netlify.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+								</Box>
+							</CardContent>
 						</Card>
 					</Grid>
 
 					<Grid item md={4} xs={12}>
-						<Card>
-							<CardActionArea>
-								<Stack
-									sx={{
-										mt: 4,
-										mb: 4,
-										justifyContent: "center",
-										alignItems: "center",
-									}}
-									direction="row"
-									spacing={2}
+						<Card style={{ height: "100%" }}>
+							<Stack
+								sx={{
+									mt: 4,
+									mb: 4,
+									justifyContent: "center",
+									alignItems: "center",
+								}}
+								direction="row"
+								spacing={2}
+							>
+								<Avatar
+									alt="UX/UI"
+									src={require("../Assets/ecom2.png")}
+									sx={{ width: 80, height: 80 }}
+								/>
+							</Stack>
+							<CardContent>
+								<Typography
+									sx={{ textAlign: "center" }}
+									gutterBottom
+									variant="h5"
+									component="div"
 								>
-									<Avatar
-										alt="UX/UI"
-										src={require("../Assets/ecom2.png")}
-										sx={{ width: 80, height: 80 }}
-									/>
-								</Stack>
-								<CardContent>
-									<Typography
-										sx={{ textAlign: "center" }}
-										gutterBottom
-										variant="h5"
-										component="div"
+									Ecommerce
+								</Typography>
+								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+									Lizards are a widespread group of squamate reptiles, with over
+									6,000 species, ranging across all continents except Antarctica
+								</Typography>
+								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											my: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
 									>
-										Ecommerce
-									</Typography>
-									<Typography variant="body2" sx={{ color: "text.secondary" }}>
-										Lizards are a widespread group of squamate reptiles, with
-										over 6,000 species, ranging across all continents except
-										Antarctica
-									</Typography>
-									<div sx={{ my: 1, mx: "auto", p: 2 }}>
-										<Stack
-											spacing={2}
-											direction="row"
-											sx={{
-												my: 3,
-												pt: 1,
-												pb: 1,
-												pr: 4,
-												pl: 4,
-												justifyContent: "space-between",
-												alignItems: "center",
-												bgcolor: "#f9f9f9",
-												boxShadow: 1,
-												borderRadius: 2,
-											}}
-										>
-											<Typography noWrap>React</Typography>
-											<Avatar
-												alt="react"
-												src={require("../Assets/react.png")}
-												sx={{ width: 50, height: 50 }}
-											/>
-										</Stack>
-										<Stack
-											spacing={2}
-											direction="row"
-											sx={{
-												mt: 3,
-												pt: 1,
-												pb: 1,
-												pr: 4,
-												pl: 4,
-												justifyContent: "space-between",
-												alignItems: "center",
-												bgcolor: "#f9f9f9",
-												boxShadow: 1,
-												borderRadius: 2,
-											}}
-										>
-											<Typography noWrap>HTML</Typography>
-											<Avatar
-												alt="react"
-												src={require("../Assets/html.png")}
-												sx={{ width: 50, height: 50 }}
-											/>
-										</Stack>
-									</div>
-								</CardContent>
-							</CardActionArea>
+										<Typography noWrap>Shopify</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/shopify.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>WooCommerce</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/woo.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>Wordpress</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/wordpress.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>Google Analytics</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/analytics.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+								</Box>
+							</CardContent>
 						</Card>
 					</Grid>
 
 					<Grid item md={4} xs={12}>
-						<Card>
-							<CardActionArea>
-								<Stack
-									sx={{
-										mt: 4,
-										mb: 4,
-										justifyContent: "center",
-										alignItems: "center",
-									}}
-									direction="row"
-									spacing={2}
+						<Card style={{ height: "100%" }}>
+							<Stack
+								sx={{
+									mt: 4,
+									mb: 4,
+									justifyContent: "center",
+									alignItems: "center",
+								}}
+								direction="row"
+								spacing={2}
+							>
+								<Avatar
+									alt="UX/UI"
+									src={require("../Assets/uxui.png")}
+									sx={{ width: 80, height: 80 }}
+								/>
+							</Stack>
+							<CardContent>
+								<Typography
+									sx={{ textAlign: "center" }}
+									gutterBottom
+									variant="h5"
+									component="div"
 								>
-									<Avatar
-										alt="UX/UI"
-										src={require("../Assets/uxui.png")}
-										sx={{ width: 80, height: 80 }}
-									/>
-								</Stack>
-								<CardContent>
-									<Typography
-										sx={{ textAlign: "center" }}
-										gutterBottom
-										variant="h5"
-										component="div"
+									Designer
+								</Typography>
+								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+									Lizards are a widespread group of squamate reptiles, with over
+									6,000 species, ranging across all continents except Antarctica
+								</Typography>
+								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											my: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
 									>
-										Designer
-									</Typography>
-									<Typography variant="body2" sx={{ color: "text.secondary" }}>
-										Lizards are a widespread group of squamate reptiles, with
-										over 6,000 species, ranging across all continents except
-										Antarctica
-									</Typography>
-									<div sx={{ my: 1, mx: "auto", p: 2 }}>
-										<Stack
-											spacing={2}
-											direction="row"
-											sx={{
-												my: 3,
-												pt: 1,
-												pb: 1,
-												pr: 4,
-												pl: 4,
-												justifyContent: "space-between",
-												alignItems: "center",
-												bgcolor: "#f9f9f9",
-												boxShadow: 1,
-												borderRadius: 2,
-											}}
-										>
-											<Typography noWrap>React</Typography>
-											<Avatar
-												alt="react"
-												src={require("../Assets/photoshop.png")}
-												sx={{ width: 50, height: 50 }}
-											/>
-										</Stack>
-										<Stack
-											spacing={2}
-											direction="row"
-											sx={{
-												mt: 3,
-												pt: 1,
-												pb: 1,
-												pr: 4,
-												pl: 4,
-												justifyContent: "space-between",
-												alignItems: "center",
-												bgcolor: "#f9f9f9",
-												boxShadow: 1,
-												borderRadius: 2,
-											}}
-										>
-											<Typography noWrap>HTML</Typography>
-											<Avatar
-												alt="react"
-												src={require("../Assets/html.png")}
-												sx={{ width: 50, height: 50 }}
-											/>
-										</Stack>
-									</div>
-								</CardContent>
-							</CardActionArea>
+										<Typography noWrap>React</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/photoshop.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>Affinity Designer</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/affinity.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>HTML</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/html.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+								</Box>
+							</CardContent>
 						</Card>
 					</Grid>
 				</Grid>

@@ -9,19 +9,23 @@ header {
 }
 
 .about-container {
-	background: rgb(6, 81, 166);
-	background: linear-gradient(
-		90deg,
-		rgba(6, 81, 166, 1) 0%,
-		rgba(9, 50, 121, 1) 47%,
-		rgba(75, 85, 205, 1) 100%
-	);
+	background-color: rgb(229, 229, 229);
 }
 
 .welcomeContainer {
-	background: url("Assets/cool3.png");
-	background-color: rgb(95, 126, 165);
+	background: url("Assets/cool4.png");
+	background-color: #02244d;
 	background-size: cover;
-	aspect-ratio: 1920/600;
+	aspect-ratio: 1080/1200;
 	margin-top: -68.5px;
+}
+
+@media only screen and (min-width: 640px) {
+	.welcomeContainer {
+		background: url("Assets/cool3.png");
+		background-color: #02244d;
+		background-size: cover;
+		aspect-ratio: 1920/600;
+		margin-top: -68.5px;
+	}
 }

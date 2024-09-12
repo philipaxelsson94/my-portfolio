@@ -17,7 +17,7 @@ function Contact() {
 				variant="h2"
 				sx={{
 					fontWeight: 700,
-					color: "#5a4dcf",
+					color: "#7c8ab5",
 				}}
 			>
 				Get in touch!

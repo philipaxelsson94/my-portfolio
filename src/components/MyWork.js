@@ -12,6 +12,18 @@ import Box from "@mui/material/Box";
 function MyWork() {
 	return (
 		<Container sx={{ mt: 10, mb: 10 }}>
+			<Typography
+				variant="h1"
+				sx={{
+					my: 4,
+					textAlign: "center",
+					fontWeight: 700,
+					color: "#7c8ab5",
+					fontSize: { xs: "3rem" },
+				}}
+			>
+				My current work
+			</Typography>
 			<Grid container spacing={4}>
 				<Grid item md={4} xs={12}>
 					<Card elevation={3}>

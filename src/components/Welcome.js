@@ -4,7 +4,8 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 import Box from "@mui/material/Box";
-import { green } from "@mui/material/colors";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 
 export default function Welcome() {
 	return (
@@ -15,16 +16,41 @@ export default function Welcome() {
 				sx={{ pt: "3rem", width: "100%" }}
 			>
 				<Grid container spacing={2} columns={12} sx={{ mt: 4 }}>
-					<Grid item xs={12} md={6}>
+					<Grid
+						sx={{
+							mt: { xs: 16, md: 2 },
+						}}
+						item
+						xs={12}
+						md={6}
+					>
 						<Typography
 							variant="h1"
 							sx={{
 								fontWeight: 700,
-								color: "#272160",
+								color: "#7c8ab5",
+								fontSize: { xs: "3rem" },
 							}}
 						>
 							<span style={{ color: "#c7e1f3" }}>&lt;/&gt;</span>WELCOME.
 						</Typography>
+						<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+							<Chip
+								sx={{ backgroundColor: "#6e79a9" }}
+								label="FRONTEND"
+								color="primary"
+							/>
+							<Chip
+								sx={{ backgroundColor: "#6e79a9" }}
+								label="ECOMMERCE"
+								color="success"
+							/>
+							<Chip
+								sx={{ backgroundColor: "#6e79a9" }}
+								label="DESIGN"
+								color="success"
+							/>
+						</Stack>
 
 						<Typography
 							variant="h6"
