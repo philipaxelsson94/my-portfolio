@@ -4,30 +4,52 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-
 import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Drawer from "@mui/material/Drawer";
+import Divider from "@mui/material/Divider";
 
 function ResponsiveAppBar() {
-	const [anchorElNav, setAnchorElNav] = React.useState(null);
+	const [open, setOpen] = React.useState(false);
 
-	const handleOpenNavMenu = (event) => {
-		setAnchorElNav(event.currentTarget);
+	const toggleDrawer = (newOpen) => () => {
+		setOpen(newOpen);
 	};
 
-	const handleCloseNavMenu = () => {
-		setAnchorElNav(null);
-	};
-
+	const DrawerList = (
+		<Box
+			sx={{ height: "100%", backgroundColor: "#e9e9e9", width: 250 }}
+			role="presentation"
+			onClick={toggleDrawer(false)}
+		>
+			<Link underline="none" href="/courses">
+				<MenuItem>
+					<Typography color="black" textAlign="center">
+						Courses
+					</Typography>
+				</MenuItem>
+			</Link>
+			<Divider />
+			<Link underline="none" href="/resume">
+				<MenuItem>
+					<Typography color="black" textAlign="center">
+						CV
+					</Typography>
+				</MenuItem>
+			</Link>
+		</Box>
+	);
 	return (
 		<AppBar position="static" sx={{ bgColor: "#5f7ea5" }}>
+			<Drawer open={open} onClose={toggleDrawer(false)}>
+				{DrawerList}
+			</Drawer>
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
 					<Typography
@@ -54,51 +76,11 @@ function ResponsiveAppBar() {
 							aria-label="account of current user"
 							aria-controls="menu-appbar"
 							aria-haspopup="true"
-							onClick={handleOpenNavMenu}
+							onClick={toggleDrawer(true)}
 							color="inherit"
 						>
 							<MenuIcon />
 						</IconButton>
-						<Menu
-							id="menu-appbar"
-							anchorEl={anchorElNav}
-							anchorOrigin={{
-								vertical: "bottom",
-								horizontal: "left",
-							}}
-							keepMounted
-							transformOrigin={{
-								vertical: "top",
-								horizontal: "left",
-							}}
-							open={Boolean(anchorElNav)}
-							onClose={handleCloseNavMenu}
-							sx={{
-								display: { xs: "block", md: "none" },
-							}}
-						>
-							<Link href="/courses">
-								<MenuItem>
-									<Typography color="#23ff79" textAlign="center">
-										Courses
-									</Typography>
-								</MenuItem>
-							</Link>
-							<Link href="/projects">
-								<MenuItem>
-									<Typography color="#23ff79" textAlign="center">
-										Projects
-									</Typography>
-								</MenuItem>
-							</Link>
-							<Link href="/resume">
-								<MenuItem>
-									<Typography color="#23ff79" textAlign="center">
-										Resumé
-									</Typography>
-								</MenuItem>
-							</Link>
-						</Menu>
 					</Box>
 
 					<Typography
@@ -117,7 +99,7 @@ function ResponsiveAppBar() {
 							textDecoration: "none",
 						}}
 					>
-						P.AX
+						P.A
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						<Button
@@ -130,24 +112,12 @@ function ResponsiveAppBar() {
 								my: 2,
 								color: "white",
 								display: "block",
+								textAlign: "center",
 							}}
 						>
-							Resumé
+							CV
 						</Button>
-						<Button
-							href="/experience"
-							variant="outlined"
-							sx={{
-								":hover": { color: "white", borderColor: "white" },
-								borderColor: "white",
-								mr: "1rem",
-								my: 2,
-								color: "white",
-								display: "block",
-							}}
-						>
-							Experience
-						</Button>
+
 						<Button
 							href="/courses"
 							variant="outlined"
@@ -158,22 +128,10 @@ function ResponsiveAppBar() {
 								my: 2,
 								color: "white",
 								display: "block",
+								textAlign: "center",
 							}}
 						>
 							Courses
-						</Button>
-						<Button
-							href="/projects"
-							variant="outlined"
-							sx={{
-								":hover": { color: "white", borderColor: "white" },
-								borderColor: "white",
-								my: 2,
-								color: "white",
-								display: "block",
-							}}
-						>
-							Projects
 						</Button>
 					</Box>
 					<Box sx={{ flexGrow: 0 }}>

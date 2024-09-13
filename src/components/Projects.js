@@ -60,7 +60,7 @@ function Projects() {
 							target="_blank"
 							variant="outlined"
 							sx={{
-								":hover": { color: "white", borderColor: "white" },
+								":hover": { color: "black", borderColor: "black", border: 2 },
 								borderColor: "black",
 								mr: "1rem",
 								my: 2,

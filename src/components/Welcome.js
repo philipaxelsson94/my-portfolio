@@ -29,7 +29,7 @@ export default function Welcome() {
 							sx={{
 								fontWeight: 700,
 								color: "#7c8ab5",
-								fontSize: { xs: "3rem" },
+								fontSize: { xs: "3rem", md: "5rem" },
 							}}
 						>
 							<span style={{ color: "#c7e1f3" }}>&lt;/&gt;</span>WELCOME.

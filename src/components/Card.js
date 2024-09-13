@@ -29,7 +29,7 @@ export default function ActionAreaCard({ title, hp, desc }) {
 		<>
 			<Card
 				onClick={handleOpen}
-				sx={{ maxWidth: 345, backgroundColor: "#2b3f81" }}
+				sx={{ maxWidth: 345, height: 120, backgroundColor: "#2b3f81" }}
 			>
 				<CardActionArea>
 					<CardContent sx={{ backgroundColor: "#2b3f81" }}>

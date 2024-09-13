@@ -15,6 +15,18 @@ export default function About() {
 			className="about-container"
 			sx={{ mb: 8, pt: 4, pb: 4, bgcolor: "#c7e1f342" }}
 		>
+			<Typography
+				variant="h1"
+				sx={{
+					my: 4,
+					textAlign: "center",
+					fontWeight: 700,
+					color: "#7c8ab5",
+					fontSize: { xs: "3rem" },
+				}}
+			>
+				My experience
+			</Typography>
 			<Container sx={{ mt: 10, mb: 10 }}>
 				<Grid container spacing={0}>
 					<Grid item md={4} xs={12}>
@@ -252,10 +264,19 @@ export default function About() {
 									Ecommerce
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									Born and raised in Ecommerce. This is my true passion and I
+									have worked with various platforms and currently I am working
+									with Shopify.
 								</Typography>
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
+									<Typography
+										sx={{ textAlign: "center", color: "#272160" }}
+										gutterBottom
+										variant="h6"
+										component="div"
+									>
+										Platforms & Software I use
+									</Typography>
 									<Stack
 										spacing={2}
 										direction="row"
@@ -385,6 +406,14 @@ export default function About() {
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
+									<Typography
+										sx={{ textAlign: "center", color: "#272160" }}
+										gutterBottom
+										variant="h6"
+										component="div"
+									>
+										Programs I use
+									</Typography>
 									<Stack
 										spacing={2}
 										direction="row"
