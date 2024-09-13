@@ -10,8 +10,8 @@ function Home() {
 		<>
 			<Welcome />
 			<MyWork />
-			<Projects />
 			<About />
+			<Projects />
 		</>
 	);
 }

@@ -1,15 +1,58 @@
 import React from "react";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import philip from "../Assets/philip.jpg";
+import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
 
-export default function Footer() {
+export default function Welcome() {
 	return (
-		<div>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-				<path
-					fill="#02244d"
-					fill-opacity="1"
-					d="M0,96L40,96C80,96,160,96,240,106.7C320,117,400,139,480,165.3C560,192,640,224,720,202.7C800,181,880,107,960,101.3C1040,96,1120,160,1200,154.7C1280,149,1360,75,1400,37.3L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-				></path>
-			</svg>
-		</div>
+		<Box className="footerContainer" sx={{ mt: 8, pt: 4, pb: 4 }}>
+			<Container align="center" maxWidth="xl">
+				<Avatar
+					sx={{ width: 150, height: 150 }}
+					alt="Philip Axelsson"
+					src={philip}
+				/>
+				<Typography
+					variant="h2"
+					sx={{
+						fontWeight: 700,
+						color: "#7c8ab5",
+						fontSize: { xs: "3rem" },
+					}}
+				>
+					Get in touch!
+				</Typography>
+				<Typography
+					variant="p"
+					sx={{
+						fontWeight: 500,
+						color: "white",
+						fontSize: { xs: "0.8rem", md: "1.2rem" },
+					}}
+				>
+					Get to know me better by starting a conversation.
+					<br />
+					I'm always interested in meeting new people and staying connected.
+				</Typography>
+				<Button
+					onClick={() => (window.location = "philipaxelaxelsson@gmail.com")}
+					variant="outlined"
+					sx={{
+						":hover": { color: "white", borderColor: "white", border: 2 },
+						borderColor: "white",
+						mr: "1rem",
+						my: 2,
+						color: "white",
+						display: "block",
+					}}
+				>
+					Send me an email
+				</Button>
+			</Container>
+		</Box>
 	);
 }

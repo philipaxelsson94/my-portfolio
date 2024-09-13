@@ -404,7 +404,7 @@ export default function About() {
 										<Typography noWrap>React</Typography>
 										<Avatar
 											alt="react"
-											src={require("../Assets/photoshop.png")}
+											src={require("../Assets/photoshop1.png")}
 											sx={{ width: 50, height: 50 }}
 										/>
 									</Stack>
@@ -447,10 +447,10 @@ export default function About() {
 											borderRadius: 2,
 										}}
 									>
-										<Typography noWrap>HTML</Typography>
+										<Typography noWrap>Figma</Typography>
 										<Avatar
 											alt="react"
-											src={require("../Assets/html.png")}
+											src={require("../Assets/figma.png")}
 											sx={{ width: 50, height: 50 }}
 										/>
 									</Stack>

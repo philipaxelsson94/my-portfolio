@@ -59,7 +59,7 @@ export default function Welcome() {
 								color: "white",
 							}}
 						>
-							I'm an civil engineer in media technology with a master in
+							I'm a civil engineer in media technology with a master in
 							interaction design.
 							<br />
 						</Typography>
