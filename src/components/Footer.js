@@ -27,7 +27,7 @@ export default function Welcome() {
 					Get in touch!
 				</Typography>
 				<Typography
-					variant="p"
+					variant="body2"
 					sx={{
 						fontWeight: 500,
 						color: "white",
