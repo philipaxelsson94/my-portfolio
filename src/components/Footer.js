@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+
 import philip from "../Assets/philip.jpg";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
