@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 import Resume from "./components/Resume";
 import { useState, useEffect } from "react";
-import GridLoader from "react-spinners/GridLoader";
+import HashLoader from "react-spinners/GridLoader";
 
 function App() {
 	const [done, setDone] = useState(false);
@@ -23,7 +23,9 @@ function App() {
 	return (
 		<>
 			{!done ? (
-				<GridLoader class="loadingSpinner" color="#36d7b7" />
+				<div className="loadingSpinner">
+					<HashLoader />
+				</div>
 			) : (
 				<>
 					<NavBar />

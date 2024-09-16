@@ -21,7 +21,7 @@ export default function About() {
 					my: 4,
 					textAlign: "center",
 					fontWeight: 700,
-					color: "#7c8ab5",
+					color: "#02244d",
 					fontSize: { xs: "2rem", md: "3rem" },
 				}}
 			>
@@ -430,7 +430,7 @@ export default function About() {
 											borderRadius: 2,
 										}}
 									>
-										<Typography noWrap>React</Typography>
+										<Typography noWrap>Photoshop</Typography>
 										<Avatar
 											alt="react"
 											src={require("../Assets/photoshop1.png")}

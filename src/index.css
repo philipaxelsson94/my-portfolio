@@ -1,19 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
 body {
-  margin: 0;
-  background-color: #f9f9f9;
+	margin: 0;
+	background-color: #f9f9f9;
 }
 
-
-p, h1, h2, h3, h4, h5, h6, div, button, a{
-  font-family: 'Kanit', sans-serif !important;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+button,
+a {
+	font-family: "Kanit", sans-serif !important;
 }
 
-.loadingSpinner{
-  position: absolute;
-    height: 150px;
-    width: 150px;
-    top: 50%;
-    left: 50%;
+.loadingSpinner {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
 }

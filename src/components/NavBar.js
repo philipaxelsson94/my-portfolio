@@ -31,7 +31,7 @@ function ResponsiveAppBar() {
 			<Link underline="none" href="/courses">
 				<MenuItem>
 					<Typography color="black" textAlign="center">
-						Courses
+						My education
 					</Typography>
 				</MenuItem>
 			</Link>
@@ -131,7 +131,7 @@ function ResponsiveAppBar() {
 								textAlign: "center",
 							}}
 						>
-							Courses
+							My education
 						</Button>
 					</Box>
 					<Box sx={{ flexGrow: 0 }}>

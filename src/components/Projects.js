@@ -15,7 +15,7 @@ function Projects() {
 					my: 4,
 					textAlign: "center",
 					fontWeight: 700,
-					color: "#7c8ab5",
+					color: "#02244d",
 					fontSize: { xs: "2rem", md: "3rem" },
 				}}
 			>
