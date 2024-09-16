@@ -22,7 +22,7 @@ export default function About() {
 					textAlign: "center",
 					fontWeight: 700,
 					color: "#7c8ab5",
-					fontSize: { xs: "3rem" },
+					fontSize: { xs: "2rem", md: "3rem" },
 				}}
 			>
 				My experience

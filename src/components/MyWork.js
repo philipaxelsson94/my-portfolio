@@ -8,7 +8,8 @@ import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 function MyWork() {
 	return (
 		<Container sx={{ mt: 10, mb: 10 }}>
@@ -19,7 +20,7 @@ function MyWork() {
 					textAlign: "center",
 					fontWeight: 700,
 					color: "#7c8ab5",
-					fontSize: { xs: "3rem" },
+					fontSize: { xs: "2rem", md: "3rem" },
 				}}
 			>
 				My current work
@@ -31,7 +32,7 @@ function MyWork() {
 							<CardMedia
 								component="img"
 								height="200"
-								src={require("../Assets/lxa.png")}
+								src={require("../Assets/lxa2.png")}
 								alt="green iguana"
 							/>
 							<CardContent>
@@ -42,6 +43,19 @@ function MyWork() {
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
+
+								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="WEB DEVELOPER"
+										color="primary"
+									/>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="ECOMMERCE SITE MANAGER"
+										color="success"
+									/>
+								</Stack>
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
 										<Button
@@ -85,7 +99,7 @@ function MyWork() {
 							<CardMedia
 								component="img"
 								height="200"
-								src={require("../Assets/sanne.png")}
+								src={require("../Assets/sann2.png")}
 								alt="green iguana"
 							/>
 							<CardContent>
@@ -96,7 +110,18 @@ function MyWork() {
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
-
+								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="WEB DEVELOPER"
+										color="primary"
+									/>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="ECOMMERCE SITE MANAGER"
+										color="success"
+									/>
+								</Stack>
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
 										<Button
@@ -141,7 +166,7 @@ function MyWork() {
 								sx={{ aspectRatio: 1 / 1 }}
 								component="img"
 								height="200"
-								src={require("../Assets/lecap.png")}
+								src={require("../Assets/lecap2.png")}
 							/>
 
 							<CardContent>
@@ -152,7 +177,18 @@ function MyWork() {
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
-
+								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="WEB DEVELOPER"
+										color="primary"
+									/>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="ECOMMERCE SITE MANAGER"
+										color="success"
+									/>
+								</Stack>
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
 										<Button
@@ -207,7 +243,18 @@ function MyWork() {
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
-
+								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="IT DEVELOPER"
+										color="primary"
+									/>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="SITE MANAGER"
+										color="success"
+									/>
+								</Stack>
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
 										<Button
@@ -259,8 +306,9 @@ function MyWork() {
 									Festprissen
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									This is my side hustle, an affiliate eCommerce business I run
+									in my spare time. I promote products I trust and earn
+									commissions on sales made through my referral links.
 								</Typography>
 
 								<Grid container spacing={2}>

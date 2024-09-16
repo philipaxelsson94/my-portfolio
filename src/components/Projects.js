@@ -9,6 +9,18 @@ import Chip from "@mui/material/Chip";
 function Projects() {
 	return (
 		<Container align="center" sx={{ my: 8 }}>
+			<Typography
+				variant="h1"
+				sx={{
+					my: 4,
+					textAlign: "center",
+					fontWeight: 700,
+					color: "#7c8ab5",
+					fontSize: { xs: "2rem", md: "3rem" },
+				}}
+			>
+				One of my projects
+			</Typography>
 			<Box sx={{ flexGrow: 1 }}>
 				<Grid container>
 					<Grid
