@@ -42,7 +42,11 @@ export default function Welcome() {
 					onClick={() => (window.location = "philipaxelaxelsson@gmail.com")}
 					variant="outlined"
 					sx={{
-						":hover": { color: "white", borderColor: "white", border: 2 },
+						":hover": {
+							backgroundColor: "black",
+							color: "white",
+							borderColor: "black",
+						},
 						borderColor: "white",
 						mr: "1rem",
 						my: 2,
