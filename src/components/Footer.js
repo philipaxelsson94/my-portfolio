@@ -41,7 +41,6 @@ export default function Welcome() {
 				<Button
 					href="mailto:philipaxelaxelsson@gmail.com"
 					target="_blank"
-					onClick={() => (window.location = "philipaxelaxelsson@gmail.com")}
 					variant="outlined"
 					sx={{
 						":hover": {
