@@ -412,14 +412,6 @@ function MyWork() {
 											Visit website
 										</Button>
 									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
-										/>
-									</Grid>
 								</Grid>
 							</CardContent>
 						</CardActionArea>
