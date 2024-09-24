@@ -39,6 +39,8 @@ export default function Welcome() {
 					I'm always interested in meeting new people and staying connected.
 				</Typography>
 				<Button
+					href="mailto:philipaxelaxelsson@gmail.com"
+					target="_blank"
 					onClick={() => (window.location = "philipaxelaxelsson@gmail.com")}
 					variant="outlined"
 					sx={{
