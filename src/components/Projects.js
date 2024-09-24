@@ -37,7 +37,8 @@ function Projects() {
 						<Typography
 							variant="h1"
 							sx={{
-								my: 4,
+								mt: 4,
+								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
 								color: "#7c8ab5",
@@ -45,6 +46,10 @@ function Projects() {
 							}}
 						>
 							Flight Fighters
+						</Typography>
+						<Typography variant="body2" sx={{ mb: 4, color: "text.secondary" }}>
+							Lizards are a widespread group of squamate reptiles, with over
+							6,000 species, ranging across all continents except Antarctica
 						</Typography>
 						<Stack
 							sx={{ my: 2, justifyContent: "center" }}
@@ -67,6 +72,7 @@ function Projects() {
 								color="success"
 							/>
 						</Stack>
+
 						<Button
 							href="https://flight-kth.firebaseapp.com/about"
 							target="_blank"

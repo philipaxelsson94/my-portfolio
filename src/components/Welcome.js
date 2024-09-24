@@ -17,7 +17,7 @@ export default function Welcome() {
 				<Grid container spacing={2} columns={12} sx={{ mt: 4 }}>
 					<Grid
 						sx={{
-							mt: { xs: 16, md: 2 },
+							mt: { xs: 18, md: 2 },
 						}}
 						item
 						xs={12}
@@ -41,12 +41,12 @@ export default function Welcome() {
 							/>
 							<Chip
 								sx={{ backgroundColor: "#6e79a9" }}
-								label="ECOMMERCE"
+								label="E-COMMERCE"
 								color="success"
 							/>
 							<Chip
 								sx={{ backgroundColor: "#6e79a9" }}
-								label="DESIGN"
+								label="IT DEVELOPER"
 								color="success"
 							/>
 						</Stack>

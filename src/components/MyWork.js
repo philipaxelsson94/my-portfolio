@@ -310,6 +310,18 @@ function MyWork() {
 									in my spare time. I promote products I trust and earn
 									commissions on sales made through my referral links.
 								</Typography>
+								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="AFFILIATE"
+										color="primary"
+									/>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="SITE MANAGER"
+										color="success"
+									/>
+								</Stack>
 
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
@@ -365,7 +377,18 @@ function MyWork() {
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
-
+								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="FREELANCING"
+										color="primary"
+									/>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
+										label="SITE MANAGER"
+										color="success"
+									/>
+								</Stack>
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
 										<Button
