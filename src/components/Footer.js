@@ -40,7 +40,6 @@ export default function Welcome() {
 				</Typography>
 				<Button
 					href="mailto:philipaxelaxelsson@gmail.com"
-					target="_blank"
 					variant="outlined"
 					sx={{
 						":hover": {
