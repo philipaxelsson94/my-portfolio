@@ -51,7 +51,6 @@ export default function Welcome() {
 						mr: "1rem",
 						my: 2,
 						color: "white",
-						display: "block",
 					}}
 				>
 					Send me an email

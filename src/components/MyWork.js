@@ -7,7 +7,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
+
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 function MyWork() {
@@ -20,7 +20,7 @@ function MyWork() {
 					textAlign: "center",
 					fontWeight: 700,
 					color: "#02244d",
-					fontSize: { xs: "2rem", md: "3rem" },
+					fontSize: { xs: "3rem", md: "3rem" },
 				}}
 			>
 				My current work
@@ -79,14 +79,6 @@ function MyWork() {
 											Visit website
 										</Button>
 									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
-										/>
-									</Grid>
 								</Grid>
 							</CardContent>
 						</CardActionArea>
@@ -144,14 +136,6 @@ function MyWork() {
 										>
 											Visit website
 										</Button>
-									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
-										/>
 									</Grid>
 								</Grid>
 							</CardContent>
@@ -212,14 +196,6 @@ function MyWork() {
 											Visit website
 										</Button>
 									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
-										/>
-									</Grid>
 								</Grid>
 							</CardContent>
 						</CardActionArea>
@@ -240,8 +216,10 @@ function MyWork() {
 									HUBSO
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									At Hubso I'm responsible for frontend and backend
+									architectures, while also managing and optimizing the IT
+									infrastructure to ensure seamless operations. Mostly I work in
+									React.
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
@@ -277,14 +255,6 @@ function MyWork() {
 										>
 											Visit website
 										</Button>
-									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
-										/>
 									</Grid>
 								</Grid>
 							</CardContent>
@@ -346,14 +316,6 @@ function MyWork() {
 											Visit website
 										</Button>
 									</Grid>
-									<Grid display="flex" justifyContent="flex-end" item xs={6}>
-										<Box
-											component="img"
-											sx={{ pt: 2, pb: 2, width: "100px" }}
-											alt=""
-											src={require("../Assets/shopifylogo.png")}
-										/>
-									</Grid>
 								</Grid>
 							</CardContent>
 						</CardActionArea>
@@ -374,8 +336,9 @@ function MyWork() {
 									Kejbertconcept
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									Sometimes I do som freelancing and at Kejbertconcept I help
+									out with managing the Shopify store and updating the frontend
+									when needed and also other IT specific tasks.
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip

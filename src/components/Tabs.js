@@ -80,10 +80,12 @@ export default function BasicTabs() {
 						variant="h2"
 						component="div"
 					>
-						My eductaion
+						Civil Engineering Degree
 					</Typography>
 					<Typography sx={{}} gutterBottom variant="h6" component="div">
-						Here you can find which courses I have taken in my civil engineering
+						I have a bachelor degree in media technology and a master degree in
+						interaction design and HCI (Human Computer Interaction). Here you
+						can find which courses I have taken during my civil engineering
 						program at KTH.
 					</Typography>
 					<Box sx={{ mt: 8, borderBottom: 1, borderColor: "divider" }}>

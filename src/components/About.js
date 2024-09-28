@@ -22,10 +22,10 @@ export default function About() {
 					textAlign: "center",
 					fontWeight: 700,
 					color: "#02244d",
-					fontSize: { xs: "2rem", md: "3rem" },
+					fontSize: { xs: "3rem", md: "3rem" },
 				}}
 			>
-				My experience
+				My skills
 			</Typography>
 			<Container sx={{ mt: 10, mb: 10 }}>
 				<Grid container spacing={0}>

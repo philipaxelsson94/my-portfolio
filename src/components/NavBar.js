@@ -24,7 +24,7 @@ function ResponsiveAppBar() {
 
 	const DrawerList = (
 		<Box
-			sx={{ height: "100%", backgroundColor: "#e9e9e9", width: 250 }}
+			sx={{ height: "100%", backgroundColor: "#02244d", width: 250 }}
 			role="presentation"
 			onClick={toggleDrawer(false)}
 		>
@@ -46,7 +46,7 @@ function ResponsiveAppBar() {
 		</Box>
 	);
 	return (
-		<AppBar position="static" sx={{ bgColor: "#5f7ea5" }}>
+		<AppBar position="static" sx={{ bgColor: "#02244d" }}>
 			<Drawer open={open} onClose={toggleDrawer(false)}>
 				{DrawerList}
 			</Drawer>
