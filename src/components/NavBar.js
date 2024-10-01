@@ -24,7 +24,7 @@ function ResponsiveAppBar() {
 
 	const DrawerList = (
 		<Box
-			sx={{ height: "100%", backgroundColor: "#02244d", width: 250 }}
+			sx={{ height: "100%", width: 250 }}
 			role="presentation"
 			onClick={toggleDrawer(false)}
 		>
@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
 			<Divider />
 			<Link underline="none" href="/resume">
 				<MenuItem>
-					<Typography color="black" textAlign="center">
+					<Typography color="#23236b" textAlign="center">
 						CV
 					</Typography>
 				</MenuItem>
@@ -46,7 +46,7 @@ function ResponsiveAppBar() {
 		</Box>
 	);
 	return (
-		<AppBar position="static" sx={{ bgColor: "#02244d" }}>
+		<AppBar position="static">
 			<Drawer open={open} onClose={toggleDrawer(false)}>
 				{DrawerList}
 			</Drawer>
@@ -63,7 +63,7 @@ function ResponsiveAppBar() {
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "#c7e1f3",
+							color: "#23236b",
 							textDecoration: "none",
 						}}
 					>
@@ -77,7 +77,7 @@ function ResponsiveAppBar() {
 							aria-controls="menu-appbar"
 							aria-haspopup="true"
 							onClick={toggleDrawer(true)}
-							color="inherit"
+							color="#23236b"
 						>
 							<MenuIcon />
 						</IconButton>
@@ -95,7 +95,7 @@ function ResponsiveAppBar() {
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "white",
+							color: "#23236b",
 							textDecoration: "none",
 						}}
 					>
@@ -106,11 +106,11 @@ function ResponsiveAppBar() {
 							href="/resume"
 							variant="outlined"
 							sx={{
-								":hover": { color: "white", borderColor: "white" },
-								borderColor: "white",
+								":hover": { color: "#23236b", borderColor: "#23236b" },
+								borderColor: "#23236b",
 								mr: "1rem",
 								my: 2,
-								color: "white",
+								color: "#23236b",
 								display: "block",
 								textAlign: "center",
 							}}
@@ -122,11 +122,11 @@ function ResponsiveAppBar() {
 							href="/courses"
 							variant="outlined"
 							sx={{
-								":hover": { color: "white", borderColor: "white" },
-								borderColor: "white",
+								":hover": { color: "#23236b", borderColor: "#23236b" },
+								borderColor: "#23236b",
 								mr: "1rem",
 								my: 2,
-								color: "white",
+								color: "#23236b",
 								display: "block",
 								textAlign: "center",
 							}}

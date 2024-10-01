@@ -55,7 +55,7 @@ export default function Welcome() {
 							variant="h6"
 							sx={{
 								fontWeight: 700,
-								color: "white",
+								color: "black",
 							}}
 						>
 							I'm a civil engineer in media technology with a master in

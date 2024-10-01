@@ -1,5 +1,6 @@
 header {
-	background-color: #02244d !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 .aboutUs-container {
@@ -14,7 +15,7 @@ header {
 
 .welcomeContainer {
 	background: url("Assets/cool4.png");
-	background-color: #02244d;
+
 	background-size: cover;
 	aspect-ratio: 1080/1200;
 	margin-top: -68.5px;
@@ -23,7 +24,7 @@ header {
 @media only screen and (min-width: 640px) {
 	.welcomeContainer {
 		background: url("Assets/cool3.png");
-		background-color: #02244d;
+
 		background-size: cover;
 		aspect-ratio: 1920/600;
 		margin-top: -68.5px;
@@ -32,7 +33,7 @@ header {
 
 .footerContainer {
 	background: url("Assets/cool8.png");
-	background-color: #02244d;
+
 	background-size: cover;
 	aspect-ratio: 1080/1600;
 	margin-top: -68.5px;
@@ -41,7 +42,7 @@ header {
 @media only screen and (min-width: 640px) {
 	.footerContainer {
 		background: url("Assets/cool6.png");
-		background-color: #02244d;
+
 		background-size: cover;
 		aspect-ratio: 1920/600;
 		margin-top: -68.5px;
