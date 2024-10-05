@@ -73,16 +73,25 @@ export default function BasicTabs() {
 				animate={{ opacity: 1 }}
 				transition={{ delay: 1.5 }}
 			>
-				<Container sx={{ mt: 4, pt: "3rem", width: "100%" }}>
+				<Container sx={{ mt: 2, pt: "2rem", width: "100%" }}>
 					<Typography
-						sx={{ color: "#272160" }}
-						gutterBottom
-						variant="h2"
-						component="div"
+						variant="h1"
+						sx={{
+							my: 4,
+							textAlign: "center",
+							fontWeight: 700,
+							color: "#02244d",
+							fontSize: { xs: "3rem", md: "3rem" },
+						}}
 					>
 						Civil Engineering Degree
 					</Typography>
-					<Typography sx={{}} gutterBottom variant="h6" component="div">
+					<Typography
+						sx={{ textAlign: "center" }}
+						gutterBottom
+						variant="h6"
+						component="div"
+					>
 						I have a bachelor degree in media technology and a master degree in
 						interaction design and HCI (Human Computer Interaction). Here you
 						can find which courses I have taken during my civil engineering

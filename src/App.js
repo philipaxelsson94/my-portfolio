@@ -7,7 +7,6 @@ import Home from "./components/Home";
 
 import Footer from "./components/Footer";
 
-import Resume from "./components/Resume";
 import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/GridLoader";
 
@@ -35,7 +34,6 @@ function App() {
 
 							<Route path="/courses" element={<BasicTabs />} />
 							<Route path="/projects" element={<Projects />} />
-							<Route path="/resume" element={<Resume />} />
 						</Routes>
 					</Router>
 

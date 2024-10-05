@@ -229,6 +229,11 @@ function MyWork() {
 									/>
 									<Chip
 										sx={{ backgroundColor: "#6e79a9" }}
+										label="FRONTEND"
+										color="success"
+									/>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9" }}
 										label="SITE MANAGER"
 										color="success"
 									/>

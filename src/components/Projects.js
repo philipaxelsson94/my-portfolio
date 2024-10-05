@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 import Chip from "@mui/material/Chip";
 function Projects() {
 	return (
-		<Container align="center" sx={{ my: 8 }}>
+		<Container align="center" sx={{ borderRadius: 2, my: 8 }}>
 			<Typography
 				variant="h1"
 				sx={{
@@ -21,7 +21,7 @@ function Projects() {
 			>
 				Projects
 			</Typography>
-			<Box sx={{ flexGrow: 1, backgroundColor: "#e8e8e8" }}>
+			<Box sx={{ flexGrow: 1, backgroundColor: "#273144" }}>
 				<Grid container>
 					<Grid
 						sx={{
@@ -39,7 +39,7 @@ function Projects() {
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
-								color: "black",
+								color: "white",
 								fontSize: { xs: "2rem" },
 							}}
 						>
@@ -47,7 +47,7 @@ function Projects() {
 						</Typography>
 						<Typography
 							variant="body2"
-							sx={{ px: 2, mb: 4, color: "text.secondary" }}
+							sx={{ px: 2, mb: 4, color: "#a2e1f8c2" }}
 						>
 							This project aimed to help employees and other stakeholders at KTH
 							to make better decisions regarding their flying habits by using a
@@ -59,17 +59,17 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#5b637b" }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#5b637b" }}
 								label="DATA VISUALISATION"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#5b637b" }}
 								label="UX/UI"
 								color="success"
 							/>
@@ -114,7 +114,6 @@ function Projects() {
 					</Grid>
 					<Grid
 						sx={{
-							backgroundColor: "#e8e8e8",
 							direction: "column",
 							alignItems: "center",
 							justifyContent: "center",
@@ -132,7 +131,7 @@ function Projects() {
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
-								color: "black",
+								color: "white",
 								fontSize: { xs: "2rem" },
 							}}
 						>
@@ -140,7 +139,7 @@ function Projects() {
 						</Typography>
 						<Typography
 							variant="body2"
-							sx={{ px: 2, mb: 4, color: "text.secondary" }}
+							sx={{ px: 2, mb: 4, color: "#a2e1f8c2" }}
 						>
 							This app helps users plan their travel routes and calculate the
 							carbon footprint of their trips based on different vehicle types.
@@ -155,17 +154,17 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#5b637b" }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#5b637b" }}
 								label="DATA VISUALISATION"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#5b637b" }}
 								label="UX/UI"
 								color="success"
 							/>

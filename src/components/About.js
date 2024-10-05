@@ -11,10 +11,7 @@ import Box from "@mui/material/Box";
 
 export default function About() {
 	return (
-		<Box
-			className="about-container"
-			sx={{ mb: 8, pt: 4, pb: 4, bgcolor: "#c7e1f342" }}
-		>
+		<Box className="about-container" sx={{ mb: 8, pt: 4, pb: 4 }}>
 			<Typography
 				variant="h1"
 				sx={{
@@ -28,7 +25,7 @@ export default function About() {
 				My skills
 			</Typography>
 			<Container sx={{ mt: 10, mb: 10 }}>
-				<Grid container spacing={0}>
+				<Grid container spacing={4}>
 					<Grid item md={4} xs={12}>
 						<Card style={{ height: "100%" }}>
 							<Stack
@@ -242,6 +239,7 @@ export default function About() {
 								sx={{
 									mt: 4,
 									mb: 4,
+
 									justifyContent: "center",
 									alignItems: "center",
 								}}

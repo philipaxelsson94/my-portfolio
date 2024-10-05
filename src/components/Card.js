@@ -29,10 +29,10 @@ export default function ActionAreaCard({ title, hp, desc }) {
 		<>
 			<Card
 				onClick={handleOpen}
-				sx={{ maxWidth: 345, height: 120, backgroundColor: "#2b3f81" }}
+				sx={{ maxWidth: 345, height: 120, backgroundColor: "#1c2233" }}
 			>
 				<CardActionArea>
-					<CardContent sx={{ backgroundColor: "#2b3f81" }}>
+					<CardContent>
 						<Box sx={{ display: "flex", justifyContent: "space-between" }}>
 							<Typography
 								sx={{
@@ -49,10 +49,15 @@ export default function ActionAreaCard({ title, hp, desc }) {
 							</Typography>
 							<Chip
 								label={hp}
-								sx={{ backgroundColor: "#5a4dcf", color: "white" }}
-							/>
+								sx={{
+									backgroundColor: "#2461c4",
+									color: "white",
+									height: "auto",
+									width: "auto",
+								}}
+							/>{" "}
 						</Box>
-						<Typography color="#23ff79" align="left" variant="body2">
+						<Typography color="#a6a6a6" align="left" variant="body2">
 							{desc}
 						</Typography>
 					</CardContent>

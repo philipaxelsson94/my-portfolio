@@ -36,7 +36,11 @@ function ResponsiveAppBar() {
 				</MenuItem>
 			</Link>
 			<Divider />
-			<Link underline="none" href="/resume">
+
+			<Link
+				onClick={() => window.open(require("../Assets/cv.pdf"), "_none")}
+				underline="none"
+			>
 				<MenuItem>
 					<Typography color="#23236b" textAlign="center">
 						CV
@@ -63,7 +67,7 @@ function ResponsiveAppBar() {
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "#23236b",
+							color: "#12114b",
 							textDecoration: "none",
 						}}
 					>
@@ -77,7 +81,7 @@ function ResponsiveAppBar() {
 							aria-controls="menu-appbar"
 							aria-haspopup="true"
 							onClick={toggleDrawer(true)}
-							color="#23236b"
+							color="#12114b"
 						>
 							<MenuIcon />
 						</IconButton>
@@ -95,7 +99,7 @@ function ResponsiveAppBar() {
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "#23236b",
+							color: "#12114b",
 							textDecoration: "none",
 						}}
 					>
@@ -103,14 +107,15 @@ function ResponsiveAppBar() {
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						<Button
-							href="/resume"
+							onClick={() => window.open(require("../Assets/cv.pdf"), "_none")}
+							underline="none"
 							variant="outlined"
 							sx={{
 								":hover": { color: "#23236b", borderColor: "#23236b" },
-								borderColor: "#23236b",
+								borderColor: "#12114b",
 								mr: "1rem",
 								my: 2,
-								color: "#23236b",
+								color: "#12114b",
 								display: "block",
 								textAlign: "center",
 							}}
@@ -123,10 +128,10 @@ function ResponsiveAppBar() {
 							variant="outlined"
 							sx={{
 								":hover": { color: "#23236b", borderColor: "#23236b" },
-								borderColor: "#23236b",
+								borderColor: "#12114b",
 								mr: "1rem",
 								my: 2,
-								color: "#23236b",
+								color: "#12114b",
 								display: "block",
 								textAlign: "center",
 							}}
@@ -139,7 +144,7 @@ function ResponsiveAppBar() {
 							<IconButton sx={{ p: 0 }}>
 								<Button
 									href="https://github.com/philipaxelsson94"
-									sx={{ color: "white" }}
+									sx={{ color: "#12114b" }}
 								>
 									<GitHubIcon fontSize="large" />
 								</Button>
@@ -149,7 +154,7 @@ function ResponsiveAppBar() {
 							<IconButton sx={{ p: 0 }}>
 								<Button
 									href="https://www.linkedin.com/in/philip-axelsson1994/"
-									sx={{ color: "white" }}
+									sx={{ color: "#12114b" }}
 								>
 									<LinkedInIcon fontSize="large" />
 								</Button>

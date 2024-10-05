@@ -20,22 +20,20 @@ export default function Welcome() {
 					variant="h2"
 					sx={{
 						fontWeight: 700,
-						color: "#7c8ab5",
+						color: "#23236b",
 						fontSize: { xs: "3rem" },
 					}}
 				>
 					Get in touch!
 				</Typography>
 				<Typography
-					variant="body2"
+					variant="h6"
 					sx={{
 						fontWeight: 500,
-						color: "white",
-						fontSize: { xs: "0.8rem", md: "1.2rem" },
+						color: "black",
 					}}
 				>
-					Get to know me better by starting a conversation.
-					<br />
+					Get to know me better by starting a conversation. <br />
 					I'm always interested in meeting new people and staying connected.
 				</Typography>
 				<Button
@@ -43,14 +41,14 @@ export default function Welcome() {
 					variant="outlined"
 					sx={{
 						":hover": {
-							backgroundColor: "black",
-							color: "white",
-							borderColor: "black",
+							backgroundColor: "#23236b",
+							color: "#23236b",
+							borderColor: "#23236b",
 						},
-						borderColor: "white",
+						borderColor: "#23236b",
 						mr: "1rem",
 						my: 2,
-						color: "white",
+						color: "#23236b",
 					}}
 				>
 					Send me an email
