@@ -72,7 +72,7 @@ export default function Welcome() {
 					</Grid>
 					<Grid
 						display="flex"
-						justifyContent="flex-end"
+						justifyContent="center"
 						sx={{
 							mt: { md: 2 },
 						}}
