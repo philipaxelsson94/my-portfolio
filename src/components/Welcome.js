@@ -34,17 +34,21 @@ export default function Welcome() {
 							variant="h1"
 							sx={{
 								fontWeight: 700,
-								color: "#12114b",
+								color: "#192d41",
 								fontSize: { xs: "3rem", md: "5rem" },
+								textAlign: { xs: "center", md: "left" },
 							}}
 						>
-							HI, I'M PHILIP AXELSSON
+							HI, I'M PHILIP
 						</Typography>
 						<Typography
 							variant="h6"
 							sx={{
-								fontWeight: 700,
 								color: "black",
+								fontSize: { xs: "1rem", md: "1.2rem" },
+								textAlign: { xs: "center", md: "left" },
+								mb: { xs: 4, md: 4 },
+								mt: { xs: 2, md: 2 },
 							}}
 						>
 							A results-driven web developer, focused on building and managing
@@ -52,19 +56,27 @@ export default function Welcome() {
 							success of the product.
 							<br />
 						</Typography>
-						<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+						<Stack
+							sx={{
+								mt: { xs: 2, md: 2 },
+								my: 2,
+								justifyContent: { xs: "center", md: "flex-start" },
+							}}
+							direction="row"
+							spacing={1}
+						>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 								label="E-COMMERCE"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9" }}
+								sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 								label="IT DEVELOPER"
 								color="success"
 							/>

@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
-import philip from "../Assets/philip.jpg";
+import philip from "../Assets/philip6.png";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
@@ -20,17 +20,20 @@ export default function Welcome() {
 					variant="h2"
 					sx={{
 						fontWeight: 700,
-						color: "#23236b",
+						color: "#192d41",
 						fontSize: { xs: "3rem" },
+						mb: 2,
+						mt: 2,
 					}}
 				>
-					Get in touch!
+					GET IN TOUCH
 				</Typography>
 				<Typography
 					variant="h6"
 					sx={{
 						fontWeight: 500,
 						color: "black",
+						mb: 2,
 					}}
 				>
 					Get to know me better by starting a conversation. <br />
@@ -41,14 +44,16 @@ export default function Welcome() {
 					variant="outlined"
 					sx={{
 						":hover": {
-							backgroundColor: "#23236b",
-							color: "#23236b",
-							borderColor: "#23236b",
+							backgroundColor: "white",
+							borderColor: "#192d41",
+							color: "#192d41",
 						},
-						borderColor: "#23236b",
+						borderColor: "#192d41",
+						backgroundColor: "#192d41",
 						mr: "1rem",
 						my: 2,
-						color: "#23236b",
+						color: "white",
+						fontWeight: 700,
 					}}
 				>
 					Send me an email

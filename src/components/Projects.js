@@ -15,15 +15,35 @@ function Projects() {
 					my: 4,
 					textAlign: "center",
 					fontWeight: 700,
-					color: "#02244d",
+					color: "#192d41",
 					fontSize: { xs: "3rem", md: "3rem" },
 				}}
 			>
-				Projects
+				PROJECTS
+			</Typography>
+			<Typography
+				variant="h6"
+				sx={{
+					my: 4,
+
+					textAlign: "center",
+					color: "#000000",
+				}}
+			>
+				Here you will find some of the personal projects and also projects from
+				my education at KTH.
 			</Typography>
 
-			<Box sx={{ flexGrow: 1, mt: 4 }}>
+			<Box sx={{ flexGrow: 1, mt: 8 }}>
 				<Grid container>
+					<Grid sx={{}} item xs={12} md={6}>
+						<Box
+							component="img"
+							sx={{ height: "100%", width: "100%" }}
+							alt=""
+							src={require("../Assets/map2.png")}
+						/>
+					</Grid>
 					<Grid
 						sx={{
 							m: "auto",
@@ -91,14 +111,6 @@ function Projects() {
 						>
 							Visit project
 						</Button>
-					</Grid>
-					<Grid sx={{}} item xs={12} md={6}>
-						<Box
-							component="img"
-							sx={{ height: "100%", width: "100%" }}
-							alt=""
-							src={require("../Assets/map2.png")}
-						/>
 					</Grid>
 				</Grid>
 				<Grid

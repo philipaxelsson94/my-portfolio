@@ -19,11 +19,11 @@ function MyWork() {
 					my: 4,
 					textAlign: "center",
 					fontWeight: 700,
-					color: "#02244d",
+					color: "#192d41",
 					fontSize: { xs: "3rem", md: "3rem" },
 				}}
 			>
-				My current work
+				WORK
 			</Typography>
 			<Grid container spacing={4}>
 				<Grid item md={4} xs={12}>
@@ -46,12 +46,12 @@ function MyWork() {
 
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="WEB DEVELOPER"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="ECOMMERCE SITE MANAGER"
 										color="success"
 									/>
@@ -104,12 +104,12 @@ function MyWork() {
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="WEB DEVELOPER"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="ECOMMERCE SITE MANAGER"
 										color="success"
 									/>
@@ -163,12 +163,12 @@ function MyWork() {
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="WEB DEVELOPER"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="ECOMMERCE SITE MANAGER"
 										color="success"
 									/>
@@ -223,17 +223,17 @@ function MyWork() {
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="IT DEVELOPER"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="FRONTEND"
 										color="success"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="SITE MANAGER"
 										color="success"
 									/>
@@ -287,12 +287,12 @@ function MyWork() {
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="AFFILIATE"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="SITE MANAGER"
 										color="success"
 									/>
@@ -347,12 +347,12 @@ function MyWork() {
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="FREELANCING"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9" }}
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
 										label="SITE MANAGER"
 										color="success"
 									/>

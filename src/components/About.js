@@ -18,13 +18,13 @@ export default function About() {
 					my: 4,
 					textAlign: "center",
 					fontWeight: 700,
-					color: "#02244d",
+					color: "#192d41",
 					fontSize: { xs: "3rem", md: "3rem" },
 				}}
 			>
-				My skills
+				MY SKILLS
 			</Typography>
-			<Container sx={{ mt: 10, mb: 10 }}>
+			<Container sx={{ mb: { xs: 2, mb: 10 } }}>
 				<Grid container spacing={4}>
 					<Grid item md={4} xs={12}>
 						<Card style={{ height: "100%" }}>
@@ -46,14 +46,17 @@ export default function About() {
 							</Stack>
 							<CardContent>
 								<Typography
-									sx={{ textAlign: "center" }}
+									sx={{ textAlign: "center", mb: 2, fontWeight: 700 }}
 									gutterBottom
 									variant="h5"
 									component="div"
 								>
 									Frontend Developer
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography
+									variant="body2"
+									sx={{ color: "text.secondary", textAlign: "center" }}
+								>
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>
@@ -239,7 +242,6 @@ export default function About() {
 								sx={{
 									mt: 4,
 									mb: 4,
-
 									justifyContent: "center",
 									alignItems: "center",
 								}}
@@ -254,14 +256,17 @@ export default function About() {
 							</Stack>
 							<CardContent>
 								<Typography
-									sx={{ textAlign: "center" }}
+									sx={{ textAlign: "center", fontWeight: 700 }}
 									gutterBottom
 									variant="h5"
 									component="div"
 								>
 									Ecommerce
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography
+									variant="body2"
+									sx={{ color: "text.secondary", textAlign: "center" }}
+								>
 									Born and raised in Ecommerce. This is my true passion and I
 									have worked with various platforms and currently I am working
 									with Shopify.
@@ -392,14 +397,17 @@ export default function About() {
 							</Stack>
 							<CardContent>
 								<Typography
-									sx={{ textAlign: "center" }}
+									sx={{ textAlign: "center", fontWeight: 700 }}
 									gutterBottom
 									variant="h5"
 									component="div"
 								>
 									Designer
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography
+									variant="body2"
+									sx={{ color: "text.secondary", textAlign: "center" }}
+								>
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
 								</Typography>

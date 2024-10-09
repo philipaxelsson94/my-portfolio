@@ -111,13 +111,15 @@ function ResponsiveAppBar() {
 							underline="none"
 							variant="outlined"
 							sx={{
-								":hover": { color: "#23236b", borderColor: "#23236b" },
-								borderColor: "#12114b",
+								":hover": { color: "#192d41", borderColor: "#192d41" },
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
 								mr: "1rem",
 								my: 2,
-								color: "#12114b",
+								color: "white",
 								display: "block",
 								textAlign: "center",
+								fontWeight: 700,
 							}}
 						>
 							CV
@@ -127,13 +129,15 @@ function ResponsiveAppBar() {
 							href="/courses"
 							variant="outlined"
 							sx={{
-								":hover": { color: "#23236b", borderColor: "#23236b" },
-								borderColor: "#12114b",
+								":hover": { color: "#192d41", borderColor: "#192d41" },
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
 								mr: "1rem",
 								my: 2,
-								color: "#12114b",
+								color: "white",
 								display: "block",
 								textAlign: "center",
+								fontWeight: 700,
 							}}
 						>
 							My education
