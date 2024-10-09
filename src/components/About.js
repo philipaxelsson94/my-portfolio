@@ -380,6 +380,29 @@ export default function About() {
 											sx={{ width: 50, height: 50 }}
 										/>
 									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>Klaviyo</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/klaviyo4.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
 								</Box>
 							</CardContent>
 						</Card>
