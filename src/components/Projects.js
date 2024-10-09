@@ -56,7 +56,7 @@ function Projects() {
 						<Typography
 							variant="h1"
 							sx={{
-								mt: 4,
+								mt: { xs: 4, md: 0 },
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
@@ -66,7 +66,10 @@ function Projects() {
 						>
 							Flight Fighters
 						</Typography>
-						<Typography variant="body2" sx={{ px: 2, mb: 4, color: "black" }}>
+						<Typography
+							variant="body2"
+							sx={{ px: 2, mb: 4, color: "black", fontSize: { xs: "1rem" } }}
+						>
 							This project aimed to help employees and other stakeholders at KTH
 							to make better decisions regarding their flying habits by using a
 							visualization tool.
@@ -77,17 +80,17 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#71a992" }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#71a992" }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="DATA VISUALISATION"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#71a992" }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="UX/UI"
 								color="success"
 							/>
@@ -99,12 +102,13 @@ function Projects() {
 							variant="outlined"
 							sx={{
 								":hover": {
-									color: "white",
-									borderColor: "black",
-									backgroundColor: "black",
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
 								},
-								borderColor: "black",
-								backgroundColor: "black",
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
 								my: 2,
 								color: "white",
 							}}
@@ -134,7 +138,7 @@ function Projects() {
 							component="img"
 							sx={{ height: "100%", width: "100%" }}
 							alt=""
-							src={require("../Assets/carboncal3.png")}
+							src={require("../Assets/carboncal4.png")}
 						/>
 					</Grid>
 					<Grid
@@ -149,7 +153,7 @@ function Projects() {
 						<Typography
 							variant="h1"
 							sx={{
-								mt: 4,
+								mt: { xs: 4, md: 0 },
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
@@ -159,7 +163,10 @@ function Projects() {
 						>
 							Carbon Calculator
 						</Typography>
-						<Typography variant="body2" sx={{ px: 2, mb: 4, color: "black" }}>
+						<Typography
+							variant="body2"
+							sx={{ px: 2, mb: 4, color: "black", fontSize: { xs: "1rem" } }}
+						>
 							This app helps users plan their travel routes and calculate the
 							carbon footprint of their trips based on different vehicle types.
 							By integrating with the Google Maps API, it provides accurate
@@ -173,17 +180,17 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#71a992" }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#71a992" }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="DATA VISUALISATION"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#71a992" }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="UX/UI"
 								color="success"
 							/>
@@ -195,14 +202,15 @@ function Projects() {
 							variant="outlined"
 							sx={{
 								":hover": {
-									color: "white",
-									borderColor: "black",
-									backgroundColor: "black",
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
 								},
-								borderColor: "black",
-
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
 								my: 2,
-								color: "black",
+								color: "white",
 							}}
 						>
 							Visit project

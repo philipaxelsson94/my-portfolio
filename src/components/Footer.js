@@ -34,6 +34,7 @@ export default function Welcome() {
 						fontWeight: 500,
 						color: "black",
 						mb: 2,
+						fontSize: { xs: "1rem" },
 					}}
 				>
 					Get to know me better by starting a conversation. <br />

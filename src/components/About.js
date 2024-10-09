@@ -55,7 +55,11 @@ export default function About() {
 								</Typography>
 								<Typography
 									variant="body2"
-									sx={{ color: "text.secondary", textAlign: "center" }}
+									sx={{
+										color: "black",
+										textAlign: "center",
+										fontSize: { xs: "1rem" },
+									}}
 								>
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica
@@ -256,7 +260,7 @@ export default function About() {
 							</Stack>
 							<CardContent>
 								<Typography
-									sx={{ textAlign: "center", fontWeight: 700 }}
+									sx={{ textAlign: "center", fontWeight: 700, mb: 2 }}
 									gutterBottom
 									variant="h5"
 									component="div"
@@ -265,7 +269,11 @@ export default function About() {
 								</Typography>
 								<Typography
 									variant="body2"
-									sx={{ color: "text.secondary", textAlign: "center" }}
+									sx={{
+										color: "black",
+										textAlign: "center",
+										fontSize: { xs: "1rem" },
+									}}
 								>
 									Born and raised in Ecommerce. This is my true passion and I
 									have worked with various platforms and currently I am working
@@ -397,7 +405,7 @@ export default function About() {
 							</Stack>
 							<CardContent>
 								<Typography
-									sx={{ textAlign: "center", fontWeight: 700 }}
+									sx={{ textAlign: "center", fontWeight: 700, mb: 2 }}
 									gutterBottom
 									variant="h5"
 									component="div"
@@ -406,7 +414,11 @@ export default function About() {
 								</Typography>
 								<Typography
 									variant="body2"
-									sx={{ color: "text.secondary", textAlign: "center" }}
+									sx={{
+										color: "black",
+										textAlign: "center",
+										fontSize: { xs: "1rem" },
+									}}
 								>
 									Lizards are a widespread group of squamate reptiles, with over
 									6,000 species, ranging across all continents except Antarctica

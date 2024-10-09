@@ -66,17 +66,17 @@ export default function Welcome() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="E-COMMERCE"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
 								label="IT DEVELOPER"
 								color="success"
 							/>
