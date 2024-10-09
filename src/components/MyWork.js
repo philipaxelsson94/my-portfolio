@@ -12,7 +12,7 @@ import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 function MyWork() {
 	return (
-		<Container sx={{ mt: 10, mb: 10 }}>
+		<Container sx={{ mt: { xs: 0, md: 10 }, mb: 10 }}>
 			<Typography
 				variant="h1"
 				sx={{

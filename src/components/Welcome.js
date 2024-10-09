@@ -8,7 +8,10 @@ import Stack from "@mui/material/Stack";
 
 export default function Welcome() {
 	return (
-		<Box className="welcomeContainer" sx={{ mb: 8, pt: 4, pb: 4 }}>
+		<Box
+			className="welcomeContainer"
+			sx={{ mb: { xs: 2, md: 8 }, pt: 4, pb: 4 }}
+		>
 			<Container align="flex-start" sx={{ pt: "3rem", width: "100%" }}>
 				<Grid
 					container
@@ -35,7 +38,7 @@ export default function Welcome() {
 								fontSize: { xs: "3rem", md: "5rem" },
 							}}
 						>
-							Hello, I'm Philip
+							HI, I'M PHILIP AXELSSON
 						</Typography>
 						<Typography
 							variant="h6"
@@ -44,8 +47,9 @@ export default function Welcome() {
 								color: "black",
 							}}
 						>
-							I'm a civil engineer in media technology with a master in
-							interaction design.
+							A results-driven web developer, focused on building and managing
+							websites and web applications that contribute to the overall
+							success of the product.
 							<br />
 						</Typography>
 						<Stack sx={{ my: 2 }} direction="row" spacing={1}>
@@ -82,7 +86,7 @@ export default function Welcome() {
 								width: "75%",
 							}}
 							alt=""
-							src={require("../Assets/philip4.png")}
+							src={require("../Assets/philip6.png")}
 						/>
 					</Grid>
 				</Grid>

@@ -21,7 +21,8 @@ function Projects() {
 			>
 				Projects
 			</Typography>
-			<Box sx={{ flexGrow: 1, backgroundColor: "#273144" }}>
+
+			<Box sx={{ flexGrow: 1, mt: 4 }}>
 				<Grid container>
 					<Grid
 						sx={{
@@ -39,16 +40,13 @@ function Projects() {
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
-								color: "white",
+								color: "black",
 								fontSize: { xs: "2rem" },
 							}}
 						>
 							Flight Fighters
 						</Typography>
-						<Typography
-							variant="body2"
-							sx={{ px: 2, mb: 4, color: "#a2e1f8c2" }}
-						>
+						<Typography variant="body2" sx={{ px: 2, mb: 4, color: "black" }}>
 							This project aimed to help employees and other stakeholders at KTH
 							to make better decisions regarding their flying habits by using a
 							visualization tool.
@@ -59,17 +57,17 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#5b637b" }}
+								sx={{ backgroundColor: "#71a992" }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#5b637b" }}
+								sx={{ backgroundColor: "#71a992" }}
 								label="DATA VISUALISATION"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#5b637b" }}
+								sx={{ backgroundColor: "#71a992" }}
 								label="UX/UI"
 								color="success"
 							/>
@@ -86,37 +84,49 @@ function Projects() {
 									backgroundColor: "black",
 								},
 								borderColor: "black",
-
+								backgroundColor: "black",
 								my: 2,
-								color: "black",
+								color: "white",
 							}}
 						>
 							Visit project
 						</Button>
 					</Grid>
-					<Grid sx={{ maxHeight: 365 }} item xs={12} md={6}>
+					<Grid sx={{}} item xs={12} md={6}>
 						<Box
 							component="img"
 							sx={{ height: "100%", width: "100%" }}
 							alt=""
-							src={require("../Assets/map.png")}
+							src={require("../Assets/map2.png")}
 						/>
 					</Grid>
 				</Grid>
-				<Grid container>
-					<Grid sx={{ maxHeight: 365 }} item xs={12} md={6}>
+				<Grid
+					container
+					sx={{
+						mt: 12,
+					}}
+				>
+					<Grid
+						direction="column"
+						alignItems="center"
+						justify="center"
+						sx={{
+							m: "auto",
+						}}
+						item
+						xs={12}
+						md={6}
+					>
 						<Box
 							component="img"
 							sx={{ height: "100%", width: "100%" }}
 							alt=""
-							src={require("../Assets/carbon.jpg")}
+							src={require("../Assets/carboncal3.png")}
 						/>
 					</Grid>
 					<Grid
 						sx={{
-							direction: "column",
-							alignItems: "center",
-							justifyContent: "center",
 							m: "auto",
 							p: 0,
 						}}
@@ -131,16 +141,13 @@ function Projects() {
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
-								color: "white",
+								color: "black",
 								fontSize: { xs: "2rem" },
 							}}
 						>
 							Carbon Calculator
 						</Typography>
-						<Typography
-							variant="body2"
-							sx={{ px: 2, mb: 4, color: "#a2e1f8c2" }}
-						>
+						<Typography variant="body2" sx={{ px: 2, mb: 4, color: "black" }}>
 							This app helps users plan their travel routes and calculate the
 							carbon footprint of their trips based on different vehicle types.
 							By integrating with the Google Maps API, it provides accurate
@@ -154,17 +161,17 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#5b637b" }}
+								sx={{ backgroundColor: "#71a992" }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#5b637b" }}
+								sx={{ backgroundColor: "#71a992" }}
 								label="DATA VISUALISATION"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#5b637b" }}
+								sx={{ backgroundColor: "#71a992" }}
 								label="UX/UI"
 								color="success"
 							/>
