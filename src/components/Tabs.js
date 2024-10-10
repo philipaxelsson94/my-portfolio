@@ -84,13 +84,12 @@ export default function BasicTabs() {
 							fontSize: { xs: "3rem", md: "3rem" },
 						}}
 					>
-						Civil Engineering Degree
+						Civil Engineer
 					</Typography>
 					<Typography
-						sx={{ textAlign: "center" }}
+						sx={{ textAlign: "center", fontSize: { xs: "1rem", md: "1.2rem" } }}
 						gutterBottom
 						variant="h6"
-						component="div"
 					>
 						I have a bachelor degree in media technology and a master degree in
 						interaction design and HCI (Human Computer Interaction). Here you
