@@ -27,7 +27,10 @@ export default function About() {
 			<Container sx={{ mb: { xs: 2, mb: 10 } }}>
 				<Grid container spacing={4}>
 					<Grid item md={4} xs={12}>
-						<Card style={{ height: "100%" }}>
+						<Card
+							className="aboutUsCard"
+							style={{ height: "100%", backgroundColor: "#ebebeb" }}
+						>
 							<Stack
 								sx={{
 									mt: 4,
@@ -67,7 +70,7 @@ export default function About() {
 
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
-										sx={{ textAlign: "center", color: "#272160" }}
+										sx={{ textAlign: "center", color: "black" }}
 										gutterBottom
 										variant="h6"
 										component="div"
@@ -241,7 +244,10 @@ export default function About() {
 					</Grid>
 
 					<Grid item md={4} xs={12}>
-						<Card style={{ height: "100%" }}>
+						<Card
+							className="aboutUsCard"
+							style={{ height: "100%", backgroundColor: "#ebebeb" }}
+						>
 							<Stack
 								sx={{
 									mt: 4,
@@ -281,7 +287,7 @@ export default function About() {
 								</Typography>
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
-										sx={{ textAlign: "center", color: "#272160" }}
+										sx={{ textAlign: "center", color: "black" }}
 										gutterBottom
 										variant="h6"
 										component="div"
@@ -409,7 +415,10 @@ export default function About() {
 					</Grid>
 
 					<Grid item md={4} xs={12}>
-						<Card style={{ height: "100%" }}>
+						<Card
+							className="aboutUsCard"
+							style={{ height: "100%", backgroundColor: "#ebebeb" }}
+						>
 							<Stack
 								sx={{
 									mt: 4,
@@ -448,7 +457,7 @@ export default function About() {
 								</Typography>
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
-										sx={{ textAlign: "center", color: "#272160" }}
+										sx={{ textAlign: "center", color: "black" }}
 										gutterBottom
 										variant="h6"
 										component="div"

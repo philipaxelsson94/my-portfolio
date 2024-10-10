@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
 			<Divider />
 
 			<Link
-				onClick={() => window.open(require("../Assets/cv.pdf"), "_none")}
+				onClick={() => window.open(require("../Assets/cvcv.pdf"), "_none")}
 				underline="none"
 			>
 				<MenuItem>
@@ -107,7 +107,9 @@ function ResponsiveAppBar() {
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						<Button
-							onClick={() => window.open(require("../Assets/cv.pdf"), "_none")}
+							onClick={() =>
+								window.open(require("../Assets/cvcv.pdf"), "_none")
+							}
 							underline="none"
 							variant="outlined"
 							sx={{
