@@ -40,8 +40,11 @@ function MyWork() {
 									LXA The Label
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									I manage and maintain the website's overall structure,
+									ensuring optimal performance and user experience through
+									frontend development. Additionally, I focus on driving growth
+									and increasing conversions by leveraging analytics tools and
+									implementing marketing automation
 								</Typography>
 
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
@@ -99,8 +102,11 @@ function MyWork() {
 									Sanne Alexandra
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									I manage and maintain the website's overall structure,
+									ensuring optimal performance and user experience through
+									frontend development. Additionally, I focus on driving growth
+									and increasing conversions by leveraging analytics tools and
+									implementing marketing automation
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
@@ -158,8 +164,11 @@ function MyWork() {
 									Le Capsole
 								</Typography>
 								<Typography variant="body2" sx={{ color: "text.secondary" }}>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									I manage and maintain the website's overall structure,
+									ensuring optimal performance and user experience through
+									frontend development. Additionally, I focus on driving growth
+									and increasing conversions by leveraging analytics tools and
+									implementing marketing automation
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip

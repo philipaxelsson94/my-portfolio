@@ -64,8 +64,9 @@ export default function About() {
 										fontSize: { xs: "1rem" },
 									}}
 								>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									Passionate about frontend development, I’ve worked with
+									various frameworks and currently focus on creating dynamic,
+									user-friendly interfaces using modern tools.
 								</Typography>
 
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
@@ -442,7 +443,7 @@ export default function About() {
 									variant="h5"
 									component="div"
 								>
-									Designer
+									UX/UI Designer
 								</Typography>
 								<Typography
 									variant="body2"
@@ -452,8 +453,9 @@ export default function About() {
 										fontSize: { xs: "1rem" },
 									}}
 								>
-									Lizards are a widespread group of squamate reptiles, with over
-									6,000 species, ranging across all continents except Antarctica
+									Interested in UX/UI design, I specialize in creating
+									intuitive, user-centered interfaces that enhance functionality
+									and user experience, while aligning with business goals.
 								</Typography>
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
