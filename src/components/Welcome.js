@@ -98,7 +98,7 @@ export default function Welcome() {
 								width: "75%",
 							}}
 							alt=""
-							src={require("../Assets/philip6.png")}
+							src={require("../Assets/philip8.png")}
 						/>
 					</Grid>
 				</Grid>
