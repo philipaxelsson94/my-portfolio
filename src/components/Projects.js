@@ -277,12 +277,9 @@ function Projects() {
 							variant="body2"
 							sx={{ px: 2, mb: 4, color: "black", fontSize: { xs: "1rem" } }}
 						>
-							This app helps users plan their travel routes and calculate the
-							carbon footprint of their trips based on different vehicle types.
-							By integrating with the Google Maps API, it provides accurate
-							distance data and allows users to compare the environmental impact
-							of various transportation options, promoting more eco-conscious
-							travel decisions."
+							This is the you are looking at, built with React and Material UI,
+							integrated with Sanity Studio for content management and data
+							handling. It is deployed on Netlify.
 						</Typography>
 						<Stack
 							sx={{ my: 2, justifyContent: "center" }}
