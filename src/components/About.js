@@ -209,6 +209,29 @@ export default function About() {
 											borderRadius: 2,
 										}}
 									>
+										<Typography noWrap>Postman</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/postman.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										spacing={2}
+										direction="row"
+										sx={{
+											mt: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+											bgcolor: "#f9f9f9",
+											boxShadow: 1,
+											borderRadius: 2,
+										}}
+									>
 										<Typography noWrap>Sanity</Typography>
 										<Avatar
 											alt="react"
