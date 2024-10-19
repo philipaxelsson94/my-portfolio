@@ -277,9 +277,9 @@ function Projects() {
 							variant="body2"
 							sx={{ px: 2, mb: 4, color: "black", fontSize: { xs: "1rem" } }}
 						>
-							This project is website you are looking at, built with React and
-							Material UI, integrated with Sanity Studio for content management
-							and data handling. It is deployed on Netlify.
+							This project is the website you are looking at, built with React
+							and Material UI, integrated with Sanity Studio for content
+							management and data handling. It is deployed on Netlify.
 						</Typography>
 						<Stack
 							sx={{ my: 2, justifyContent: "center" }}
