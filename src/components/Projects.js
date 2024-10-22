@@ -248,7 +248,7 @@ function Projects() {
 							component="img"
 							sx={{ height: "100%", width: "100%" }}
 							alt=""
-							src={require("../Assets/axelssondev.png")}
+							src={require("../Assets/axelssondev2.png")}
 						/>
 					</Grid>
 					<Grid
