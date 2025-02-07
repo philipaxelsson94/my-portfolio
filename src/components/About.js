@@ -307,7 +307,7 @@ export default function About() {
 								>
 									Born and raised in Ecommerce. This is my true passion and I
 									have worked with various platforms and currently I am working
-									with Shopify.
+									with Shopify and Wordpress.
 								</Typography>
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
