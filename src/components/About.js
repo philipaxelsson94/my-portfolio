@@ -64,7 +64,7 @@ export default function About() {
 										fontSize: { xs: "1rem" },
 									}}
 								>
-									Passionate about frontend development, I’ve worked with
+									I am passionate about frontend development, I’ve worked with
 									various frameworks and currently focus on creating dynamic,
 									user-friendly interfaces using modern tools.
 								</Typography>
