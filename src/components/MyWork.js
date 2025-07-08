@@ -32,6 +32,59 @@ function MyWork() {
 							<CardMedia
 								component="img"
 								height="200"
+								src={require("../Assets/aip3.png")}
+								alt="green iguana"
+							/>
+							<CardContent>
+								<Typography gutterBottom variant="h5" component="div">
+									Live Arena Technologies
+								</Typography>
+								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+									
+								</Typography>
+
+								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
+									<Chip
+										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										label="FRONTEND DEVELOPER"
+										color="primary"
+									/>
+									
+								</Stack>
+								<Grid container spacing={2}>
+									<Grid item xs={6}>
+										<Button
+											href="https://livearena.com/"
+											target="_blank"
+											variant="outlined"
+											sx={{
+												":hover": {
+													color: "white",
+													borderColor: "white",
+													backgroundColor: "black",
+												},
+												borderColor: "black",
+												mr: "1rem",
+												my: 2,
+												color: "black",
+												display: "block",
+												textAlign: "center",
+											}}
+										>
+											Visit website
+										</Button>
+									</Grid>
+								</Grid>
+							</CardContent>
+						</CardActionArea>
+					</Card>
+				</Grid>
+				<Grid item md={4} xs={12}>
+					<Card elevation={3}>
+						<CardActionArea>
+							<CardMedia
+								component="img"
+								height="200"
 								src={require("../Assets/lxa2.png")}
 								alt="green iguana"
 							/>
