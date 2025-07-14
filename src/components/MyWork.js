@@ -57,19 +57,19 @@ function MyWork() {
 											href="https://livearena.com/"
 											target="_blank"
 											variant="outlined"
-											sx={{
-												":hover": {
-													color: "white",
-													borderColor: "white",
-													backgroundColor: "black",
-												},
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-												textAlign: "center",
-											}}
+											variant="outlined"
+							sx={{
+								":hover": {
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
+								},
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
+								my: 2,
+								color: "white",
+							}}
 										>
 											Visit website
 										</Button>
@@ -118,19 +118,19 @@ function MyWork() {
 											href="https://lxathelabel.com/"
 											target="_blank"
 											variant="outlined"
-											sx={{
-												":hover": {
-													color: "white",
-													borderColor: "white",
-													backgroundColor: "black",
-												},
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-												textAlign: "center",
-											}}
+											variant="outlined"
+							sx={{
+								":hover": {
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
+								},
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
+								my: 2,
+								color: "white",
+							}}
 										>
 											Visit website
 										</Button>
@@ -179,19 +179,19 @@ function MyWork() {
 											href="https://sannealexandra.com/"
 											target="_blank"
 											variant="outlined"
-											sx={{
-												":hover": {
-													color: "white",
-													borderColor: "white",
-													backgroundColor: "black",
-												},
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-												textAlign: "center",
-											}}
+											variant="outlined"
+							sx={{
+								":hover": {
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
+								},
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
+								my: 2,
+								color: "white",
+							}}
 										>
 											Visit website
 										</Button>
@@ -241,19 +241,19 @@ function MyWork() {
 											href="https://lecapsole.com/"
 											target="_blank"
 											variant="outlined"
-											sx={{
-												":hover": {
-													color: "white",
-													borderColor: "white",
-													backgroundColor: "black",
-												},
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-												textAlign: "center",
-											}}
+											variant="outlined"
+							sx={{
+								":hover": {
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
+								},
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
+								my: 2,
+								color: "white",
+							}}
 										>
 											Visit website
 										</Button>
@@ -306,19 +306,19 @@ function MyWork() {
 											href="https://hubso.com/"
 											target="_blank"
 											variant="outlined"
-											sx={{
-												":hover": {
-													color: "white",
-													borderColor: "white",
-													backgroundColor: "black",
-												},
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-												textAlign: "center",
-											}}
+											variant="outlined"
+							sx={{
+								":hover": {
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
+								},
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
+								my: 2,
+								color: "white",
+							}}
 										>
 											Visit website
 										</Button>
@@ -366,19 +366,19 @@ function MyWork() {
 											href="https://festprissen.se/"
 											target="_blank"
 											variant="outlined"
-											sx={{
-												":hover": {
-													color: "white",
-													borderColor: "white",
-													backgroundColor: "black",
-												},
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-												textAlign: "center",
-											}}
+											variant="outlined"
+							sx={{
+								":hover": {
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
+								},
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
+								my: 2,
+								color: "white",
+							}}
 										>
 											Visit website
 										</Button>
@@ -425,19 +425,19 @@ function MyWork() {
 											href="https://kejbertconcept.se/"
 											target="_blank"
 											variant="outlined"
-											sx={{
-												":hover": {
-													color: "white",
-													borderColor: "white",
-													backgroundColor: "black",
-												},
-												borderColor: "black",
-												mr: "1rem",
-												my: 2,
-												color: "black",
-												display: "block",
-												textAlign: "center",
-											}}
+											variant="outlined"
+							sx={{
+								":hover": {
+									color: "#192d41",
+									borderColor: "#192d41",
+									backgroundColor: "white",
+								},
+								borderColor: "#192d41",
+								backgroundColor: "#192d41",
+								fontWeight: 700,
+								my: 2,
+								color: "white",
+							}}
 										>
 											Visit website
 										</Button>
