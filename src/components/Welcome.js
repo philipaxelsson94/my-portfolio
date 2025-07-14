@@ -42,6 +42,17 @@ export default function Welcome() {
 							HI, I'M PHILIP
 						</Typography>
 						<Typography
+							variant="h3"
+							sx={{
+								fontWeight: 700,
+								color: "#192d41",
+								fontSize: { xs: "1rem", md: "1.5rem" },
+								textAlign: { xs: "center", md: "left" },
+							}}
+						>
+							Civil Engineer in Media Technology at KTH
+						</Typography>
+						<Typography
 							variant="h6"
 							sx={{
 								color: "black",
@@ -51,7 +62,7 @@ export default function Welcome() {
 								mt: { xs: 2, md: 2 },
 							}}
 						>
-							A results-driven web developer, focused on building and managing
+							I am a result driven frontend developer, focused on building and managing
 							websites and web applications that contribute to the overall
 							success of the product.
 							<br />
