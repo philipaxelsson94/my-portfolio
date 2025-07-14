@@ -32,7 +32,7 @@ function MyWork() {
 							<CardMedia
 								component="img"
 								height="200"
-								src={require("../Assets/aip3.png")}
+								src={require("../Assets/aip5.png")}
 								alt="green iguana"
 							/>
 							<CardContent>

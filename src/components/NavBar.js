@@ -127,7 +127,7 @@ function ResponsiveAppBar() {
 							CV
 						</Button>
 
-						<Button
+						{/*<Button
 							href="/courses"
 							variant="outlined"
 							sx={{
@@ -143,7 +143,7 @@ function ResponsiveAppBar() {
 							}}
 						>
 							My education
-						</Button>
+						</Button> */}
 					</Box>
 					<Box sx={{ flexGrow: 0 }}>
 						<Tooltip>
