@@ -108,7 +108,7 @@ function ResponsiveAppBar() {
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						<Button
 							onClick={() =>
-								window.open(require("../Assets/cvcv.pdf"), "_none")
+								window.open(require("../Assets/cv1.pdf"), "_none")
 							}
 							underline="none"
 							variant="outlined"

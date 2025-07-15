@@ -57,7 +57,7 @@ function MyWork() {
 											href="https://livearena.com/"
 											target="_blank"
 											variant="outlined"
-											variant="outlined"
+											
 							sx={{
 								":hover": {
 									color: "#192d41",
@@ -118,7 +118,7 @@ function MyWork() {
 											href="https://lxathelabel.com/"
 											target="_blank"
 											variant="outlined"
-											variant="outlined"
+											
 							sx={{
 								":hover": {
 									color: "#192d41",
@@ -179,7 +179,7 @@ function MyWork() {
 											href="https://sannealexandra.com/"
 											target="_blank"
 											variant="outlined"
-											variant="outlined"
+											
 							sx={{
 								":hover": {
 									color: "#192d41",
@@ -241,7 +241,7 @@ function MyWork() {
 											href="https://lecapsole.com/"
 											target="_blank"
 											variant="outlined"
-											variant="outlined"
+											
 							sx={{
 								":hover": {
 									color: "#192d41",
@@ -306,7 +306,7 @@ function MyWork() {
 											href="https://hubso.com/"
 											target="_blank"
 											variant="outlined"
-											variant="outlined"
+											
 							sx={{
 								":hover": {
 									color: "#192d41",
@@ -366,7 +366,7 @@ function MyWork() {
 											href="https://festprissen.se/"
 											target="_blank"
 											variant="outlined"
-											variant="outlined"
+											
 							sx={{
 								":hover": {
 									color: "#192d41",
@@ -425,7 +425,7 @@ function MyWork() {
 											href="https://kejbertconcept.se/"
 											target="_blank"
 											variant="outlined"
-											variant="outlined"
+											
 							sx={{
 								":hover": {
 									color: "#192d41",
