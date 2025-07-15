@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
 			<Divider />
 
 			<Link
-				onClick={() => window.open(require("../Assets/cvcv.pdf"), "_none")}
+				onClick={() => window.open(require("../Assets/cv1.pdf"), "_none")}
 				underline="none"
 			>
 				<MenuItem>
