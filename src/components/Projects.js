@@ -309,7 +309,7 @@ function Projects() {
 						</Stack>
 
 						<Button
-							href="https://carbon-calculator-d4d9b.firebaseapp.com/"
+							href=""
 							target="_blank"
 							variant="outlined"
 							sx={{
@@ -325,7 +325,7 @@ function Projects() {
 								color: "white",
 							}}
 						>
-							Visit project
+							You are here
 						</Button>
 					</Grid>
 				</Grid>
