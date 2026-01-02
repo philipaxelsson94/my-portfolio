@@ -17,10 +17,11 @@ export default function Welcome() {
 					src={philip}
 				/>
 				<Typography
+					className="footerTitle"
 					variant="h2"
 					sx={{
 						fontWeight: 700,
-						color: "#192d41",
+
 						fontSize: { xs: "3rem" },
 						mb: 2,
 						mt: 2,
@@ -32,7 +33,7 @@ export default function Welcome() {
 					variant="h6"
 					sx={{
 						fontWeight: 500,
-						color: "black",
+						color: "white",
 						mb: 2,
 						fontSize: { xs: "1rem", md: "1.2rem" },
 					}}
@@ -45,12 +46,11 @@ export default function Welcome() {
 					variant="outlined"
 					sx={{
 						":hover": {
-							backgroundColor: "white",
-							borderColor: "#192d41",
-							color: "#192d41",
+							backgroundColor: "#333333",
+							borderColor: "#333333",
 						},
-						borderColor: "#192d41",
-						backgroundColor: "#192d41",
+						borderColor: "#262626",
+						backgroundColor: "#262626",
 						mr: "1rem",
 						my: 2,
 						color: "white",

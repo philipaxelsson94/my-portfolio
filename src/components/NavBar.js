@@ -67,7 +67,7 @@ function ResponsiveAppBar() {
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "#12114b",
+							color: "#8354f8",
 							textDecoration: "none",
 						}}
 					>
@@ -81,7 +81,7 @@ function ResponsiveAppBar() {
 							aria-controls="menu-appbar"
 							aria-haspopup="true"
 							onClick={toggleDrawer(true)}
-							color="#12114b"
+							color="#8354f8"
 						>
 							<MenuIcon />
 						</IconButton>
@@ -99,7 +99,7 @@ function ResponsiveAppBar() {
 							fontFamily: "monospace",
 							fontWeight: 700,
 							letterSpacing: ".3rem",
-							color: "#12114b",
+							color: "#8354f8",
 							textDecoration: "none",
 						}}
 					>
@@ -107,15 +107,16 @@ function ResponsiveAppBar() {
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						<Button
-							onClick={() =>
-								window.open(require("../Assets/cv1.pdf"), "_none")
-							}
+							onClick={() => window.open(require("../Assets/cv1.pdf"), "_none")}
 							underline="none"
 							variant="outlined"
 							sx={{
-								":hover": { color: "#192d41", borderColor: "#192d41" },
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
+								":hover": {
+									backgroundColor: "#333333",
+									borderColor: "#333333",
+								},
+								borderColor: "#262626",
+								backgroundColor: "#262626",
 								mr: "1rem",
 								my: 2,
 								color: "white",
@@ -150,7 +151,7 @@ function ResponsiveAppBar() {
 							<IconButton sx={{ p: 0 }}>
 								<Button
 									href="https://github.com/philipaxelsson94"
-									sx={{ color: "#12114b" }}
+									sx={{ color: "white" }}
 								>
 									<GitHubIcon fontSize="large" />
 								</Button>
@@ -160,7 +161,7 @@ function ResponsiveAppBar() {
 							<IconButton sx={{ p: 0 }}>
 								<Button
 									href="https://www.linkedin.com/in/philip-axelsson1994/"
-									sx={{ color: "#12114b" }}
+									sx={{ color: "white" }}
 								>
 									<LinkedInIcon fontSize="large" />
 								</Button>

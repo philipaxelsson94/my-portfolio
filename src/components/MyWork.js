@@ -19,7 +19,7 @@ function MyWork() {
 					my: 4,
 					textAlign: "center",
 					fontWeight: 700,
-					color: "#192d41",
+					color: "white",
 					fontSize: { xs: "3rem", md: "3rem" },
 				}}
 			>
@@ -28,28 +28,41 @@ function MyWork() {
 			<Grid container spacing={4}>
 				<Grid item md={4} xs={12}>
 					<Card elevation={3}>
-						<CardActionArea>
-							<CardMedia
-								component="img"
-								height="200"
-								src={require("../Assets/aip5.png")}
-								alt="green iguana"
-							/>
+						<CardActionArea className="work-card-action-area">
+							<div className="work-card-media">
+								<CardMedia
+									className="work-card-media-image"
+									component="img"
+									height="200"
+									src={require("../Assets/aip5.png")}
+									alt="green iguana"
+								/>
+							</div>
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
+								<Typography
+									className="work-card-title"
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
 									Live Arena Technologies
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
-									
-								</Typography>
+								<Typography
+									variant="body2"
+									sx={{ color: "#999999" }}
+								></Typography>
 
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="FRONTEND DEVELOPER"
 										color="primary"
 									/>
-									
 								</Stack>
 								<Grid container spacing={2}>
 									<Grid item xs={6}>
@@ -57,19 +70,17 @@ function MyWork() {
 											href="https://livearena.com/"
 											target="_blank"
 											variant="outlined"
-											
-							sx={{
-								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
-								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
-								fontWeight: 700,
-								my: 2,
-								color: "white",
-							}}
+											sx={{
+												":hover": {
+													backgroundColor: "#333333",
+													borderColor: "#333333",
+												},
+												borderColor: "#262626",
+												backgroundColor: "#262626",
+												fontWeight: 700,
+												my: 2,
+												color: "white",
+											}}
 										>
 											Visit website
 										</Button>
@@ -81,18 +92,27 @@ function MyWork() {
 				</Grid>
 				<Grid item md={4} xs={12}>
 					<Card elevation={3}>
-						<CardActionArea>
-							<CardMedia
-								component="img"
-								height="200"
-								src={require("../Assets/lxa2.png")}
-								alt="green iguana"
-							/>
+						<CardActionArea className="work-card-action-area">
+							<div className="work-card-media">
+								<CardMedia
+									className="work-card-media-image"
+									component="img"
+									height="200"
+									src={require("../Assets/lxa2.png")}
+									alt="green iguana"
+								/>
+							</div>
+
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
+								<Typography
+									className="work-card-title"
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
 									LXA The Label
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography variant="body2" sx={{ color: "#999999" }}>
 									I manage and maintain the website's overall structure,
 									ensuring optimal performance and user experience through
 									frontend development. Additionally, I focus on driving growth
@@ -102,12 +122,22 @@ function MyWork() {
 
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="WEB DEVELOPER"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="ECOMMERCE SITE MANAGER"
 										color="success"
 									/>
@@ -118,19 +148,17 @@ function MyWork() {
 											href="https://lxathelabel.com/"
 											target="_blank"
 											variant="outlined"
-											
-							sx={{
-								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
-								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
-								fontWeight: 700,
-								my: 2,
-								color: "white",
-							}}
+											sx={{
+												":hover": {
+													backgroundColor: "#333333",
+													borderColor: "#333333",
+												},
+												borderColor: "#262626",
+												backgroundColor: "#262626",
+												fontWeight: 700,
+												my: 2,
+												color: "white",
+											}}
 										>
 											Visit website
 										</Button>
@@ -143,18 +171,27 @@ function MyWork() {
 
 				<Grid item md={4} xs={12}>
 					<Card elevation={3}>
-						<CardActionArea>
-							<CardMedia
-								component="img"
-								height="200"
-								src={require("../Assets/sann2.png")}
-								alt="green iguana"
-							/>
+						<CardActionArea className="work-card-action-area">
+							<div className="work-card-media">
+								<CardMedia
+									className="work-card-media-image"
+									component="img"
+									height="200"
+									src={require("../Assets/sann2.png")}
+									alt="green iguana"
+								/>
+							</div>
+
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
+								<Typography
+									className="work-card-title"
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
 									Sanne Alexandra
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography variant="body2" sx={{ color: "#999999" }}>
 									I manage and maintain the website's overall structure,
 									ensuring optimal performance and user experience through
 									frontend development. Additionally, I focus on driving growth
@@ -163,12 +200,22 @@ function MyWork() {
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="WEB DEVELOPER"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="ECOMMERCE SITE MANAGER"
 										color="success"
 									/>
@@ -179,19 +226,17 @@ function MyWork() {
 											href="https://sannealexandra.com/"
 											target="_blank"
 											variant="outlined"
-											
-							sx={{
-								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
-								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
-								fontWeight: 700,
-								my: 2,
-								color: "white",
-							}}
+											sx={{
+												":hover": {
+													backgroundColor: "#333333",
+													borderColor: "#333333",
+												},
+												borderColor: "#262626",
+												backgroundColor: "#262626",
+												fontWeight: 700,
+												my: 2,
+												color: "white",
+											}}
 										>
 											Visit website
 										</Button>
@@ -204,19 +249,26 @@ function MyWork() {
 
 				<Grid item md={4} xs={12}>
 					<Card elevation={3}>
-						<CardActionArea>
-							<CardMedia
-								sx={{ aspectRatio: 1 / 1 }}
-								component="img"
-								height="200"
-								src={require("../Assets/lecap2.png")}
-							/>
+						<CardActionArea className="work-card-action-area">
+							<div className="work-card-media">
+								<CardMedia
+									className="work-card-media-image"
+									component="img"
+									height="200"
+									src={require("../Assets/lecap2.png")}
+								/>
+							</div>
 
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
+								<Typography
+									className="work-card-title"
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
 									Le Capsole
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography variant="body2" sx={{ color: "#999999" }}>
 									I manage and maintain the website's overall structure,
 									ensuring optimal performance and user experience through
 									frontend development. Additionally, I focus on driving growth
@@ -225,12 +277,22 @@ function MyWork() {
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="WEB DEVELOPER"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="ECOMMERCE SITE MANAGER"
 										color="success"
 									/>
@@ -241,19 +303,17 @@ function MyWork() {
 											href="https://lecapsole.com/"
 											target="_blank"
 											variant="outlined"
-											
-							sx={{
-								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
-								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
-								fontWeight: 700,
-								my: 2,
-								color: "white",
-							}}
+											sx={{
+												":hover": {
+													backgroundColor: "#333333",
+													borderColor: "#333333",
+												},
+												borderColor: "#262626",
+												backgroundColor: "#262626",
+												fontWeight: 700,
+												my: 2,
+												color: "white",
+											}}
 										>
 											Visit website
 										</Button>
@@ -265,19 +325,26 @@ function MyWork() {
 				</Grid>
 				<Grid item md={4} xs={12}>
 					<Card elevation={3}>
-						<CardActionArea>
-							<CardMedia
-								sx={{ aspectRatio: 1 / 1 }}
-								component="img"
-								height="200"
-								src={require("../Assets/hubso.png")}
-							/>
+						<CardActionArea className="work-card-action-area">
+							<div className="work-card-media">
+								<CardMedia
+									className="work-card-media-image"
+									component="img"
+									height="200"
+									src={require("../Assets/hubso.png")}
+								/>
+							</div>
 
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
+								<Typography
+									className="work-card-title"
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
 									HUBSO
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography variant="body2" sx={{ color: "#999999" }}>
 									At Hubso I'm responsible for frontend and backend
 									architectures, while also managing and optimizing the IT
 									infrastructure to ensure seamless operations. Mostly I work in
@@ -285,17 +352,32 @@ function MyWork() {
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="IT DEVELOPER"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="FRONTEND"
 										color="success"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="SITE MANAGER"
 										color="success"
 									/>
@@ -306,19 +388,17 @@ function MyWork() {
 											href="https://hubso.com/"
 											target="_blank"
 											variant="outlined"
-											
-							sx={{
-								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
-								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
-								fontWeight: 700,
-								my: 2,
-								color: "white",
-							}}
+											sx={{
+												":hover": {
+													backgroundColor: "#333333",
+													borderColor: "#333333",
+												},
+												borderColor: "#262626",
+												backgroundColor: "#262626",
+												fontWeight: 700,
+												my: 2,
+												color: "white",
+											}}
 										>
 											Visit website
 										</Button>
@@ -330,31 +410,48 @@ function MyWork() {
 				</Grid>
 				<Grid item md={4} xs={12}>
 					<Card elevation={3}>
-						<CardActionArea>
-							<CardMedia
-								sx={{ aspectRatio: 1 / 1 }}
-								component="img"
-								height="200"
-								src={require("../Assets/festprissen.png")}
-							/>
+						<CardActionArea className="work-card-action-area">
+							<div className="work-card-media">
+								<CardMedia
+									className="work-card-media-image"
+									component="img"
+									height="200"
+									src={require("../Assets/festprissen.png")}
+								/>
+							</div>
 
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
+								<Typography
+									className="work-card-title"
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
 									Festprissen
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography variant="body2" sx={{ color: "#999999" }}>
 									This is my side hustle, an affiliate eCommerce business I run
 									in my spare time. I promote products I trust and earn
 									commissions on sales made through my referral links.
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="AFFILIATE"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="SITE MANAGER"
 										color="success"
 									/>
@@ -366,19 +463,17 @@ function MyWork() {
 											href="https://festprissen.se/"
 											target="_blank"
 											variant="outlined"
-											
-							sx={{
-								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
-								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
-								fontWeight: 700,
-								my: 2,
-								color: "white",
-							}}
+											sx={{
+												":hover": {
+													backgroundColor: "#333333",
+													borderColor: "#333333",
+												},
+												borderColor: "#262626",
+												backgroundColor: "#262626",
+												fontWeight: 700,
+												my: 2,
+												color: "white",
+											}}
 										>
 											Visit website
 										</Button>
@@ -390,31 +485,48 @@ function MyWork() {
 				</Grid>
 				<Grid item md={4} xs={12}>
 					<Card elevation={3}>
-						<CardActionArea>
-							<CardMedia
-								sx={{ aspectRatio: 1 / 1 }}
-								component="img"
-								height="200"
-								src={require("../Assets/kejbertconcept.png")}
-							/>
+						<CardActionArea className="work-card-action-area">
+							<div className="work-card-media">
+								<CardMedia
+									className="work-card-media-image"
+									component="img"
+									height="200"
+									src={require("../Assets/kejbertconcept.png")}
+								/>
+							</div>
 
 							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
+								<Typography
+									className="work-card-title"
+									gutterBottom
+									variant="h5"
+									component="div"
+								>
 									Kejbertconcept
 								</Typography>
-								<Typography variant="body2" sx={{ color: "text.secondary" }}>
+								<Typography variant="body2" sx={{ color: "#999999" }}>
 									Sometimes I do som freelancing and at Kejbertconcept I help
 									out with managing the Shopify store and updating the frontend
 									when needed and also other IT specific tasks.
 								</Typography>
 								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="FREELANCING"
 										color="primary"
 									/>
 									<Chip
-										sx={{ backgroundColor: "#6e79a9", fontWeight: 700 }}
+										className="work-category-chip"
+										sx={{
+											backgroundColor: "#8354F8",
+											fontWeight: 700,
+											fontSize: "0.7rem",
+										}}
 										label="SITE MANAGER"
 										color="success"
 									/>
@@ -425,19 +537,17 @@ function MyWork() {
 											href="https://kejbertconcept.se/"
 											target="_blank"
 											variant="outlined"
-											
-							sx={{
-								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
-								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
-								fontWeight: 700,
-								my: 2,
-								color: "white",
-							}}
+											sx={{
+												":hover": {
+													backgroundColor: "#333333",
+													borderColor: "#333333",
+												},
+												borderColor: "#262626",
+												backgroundColor: "#262626",
+												fontWeight: 700,
+												my: 2,
+												color: "white",
+											}}
 										>
 											Visit website
 										</Button>

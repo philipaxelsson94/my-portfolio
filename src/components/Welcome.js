@@ -31,10 +31,10 @@ export default function Welcome() {
 						md={6}
 					>
 						<Typography
+							className="welcomeText"
 							variant="h1"
 							sx={{
 								fontWeight: 700,
-								color: "#192d41",
 								fontSize: { xs: "3rem", md: "5rem" },
 								textAlign: { xs: "center", md: "left" },
 							}}
@@ -45,7 +45,7 @@ export default function Welcome() {
 							variant="h3"
 							sx={{
 								fontWeight: 700,
-								color: "#192d41",
+								color: "white",
 								fontSize: { xs: "1rem", md: "1.5rem" },
 								textAlign: { xs: "center", md: "left" },
 							}}
@@ -55,16 +55,16 @@ export default function Welcome() {
 						<Typography
 							variant="h6"
 							sx={{
-								color: "black",
+								color: "#999999",
 								fontSize: { xs: "1rem", md: "1.2rem" },
 								textAlign: { xs: "center", md: "left" },
 								mb: { xs: 4, md: 4 },
 								mt: { xs: 2, md: 2 },
 							}}
 						>
-							I am a result driven frontend developer, focused on building and managing
-							websites and web applications that contribute to the overall
-							success of the product.
+							I am a result driven frontend developer, focused on building and
+							managing websites and web applications that contribute to the
+							overall success of the product.
 							<br />
 						</Typography>
 						<Stack
@@ -77,17 +77,17 @@ export default function Welcome() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="FRONTEND"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="E-COMMERCE"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="IT DEVELOPER"
 								color="success"
 							/>

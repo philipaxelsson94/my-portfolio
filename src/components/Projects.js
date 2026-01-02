@@ -15,7 +15,7 @@ function Projects() {
 					my: 4,
 					textAlign: "center",
 					fontWeight: 700,
-					color: "#192d41",
+					color: "white",
 					fontSize: { xs: "3rem", md: "3rem" },
 				}}
 			>
@@ -27,7 +27,7 @@ function Projects() {
 					my: 4,
 
 					textAlign: "center",
-					color: "#000000",
+					color: "#999999",
 				}}
 			>
 				Here you will find some of the personal projects and also projects from
@@ -60,7 +60,7 @@ function Projects() {
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
-								color: "black",
+								color: "white",
 								fontSize: { xs: "2rem" },
 							}}
 						>
@@ -68,7 +68,7 @@ function Projects() {
 						</Typography>
 						<Typography
 							variant="body2"
-							sx={{ px: 2, mb: 4, color: "black", fontSize: { xs: "1rem" } }}
+							sx={{ px: 2, mb: 4, color: "#999999", fontSize: { xs: "1rem" } }}
 						>
 							This project aimed to help employees and other stakeholders at KTH
 							to make better decisions regarding their flying habits by using a
@@ -80,27 +80,27 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="REACT"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="D3.JS"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="SASS"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="FIREBASE"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="PYTHON"
 								color="success"
 							/>
@@ -112,12 +112,11 @@ function Projects() {
 							variant="outlined"
 							sx={{
 								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
+									backgroundColor: "#333333",
+									borderColor: "#333333",
 								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
+								borderColor: "#262626",
+								backgroundColor: "#262626",
 								fontWeight: 700,
 								my: 2,
 								color: "white",
@@ -167,7 +166,7 @@ function Projects() {
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
-								color: "black",
+								color: "white",
 								fontSize: { xs: "2rem" },
 							}}
 						>
@@ -175,7 +174,7 @@ function Projects() {
 						</Typography>
 						<Typography
 							variant="body2"
-							sx={{ px: 2, mb: 4, color: "black", fontSize: { xs: "1rem" } }}
+							sx={{ px: 2, mb: 4, color: "#999999", fontSize: { xs: "1rem" } }}
 						>
 							This app helps users plan their travel routes and calculate the
 							carbon footprint of their trips based on different vehicle types.
@@ -190,17 +189,17 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="REACT"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="FIREBASE"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="API"
 								color="success"
 							/>
@@ -212,12 +211,11 @@ function Projects() {
 							variant="outlined"
 							sx={{
 								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
+									backgroundColor: "#333333",
+									borderColor: "#333333",
 								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
+								borderColor: "#262626",
+								backgroundColor: "#262626",
 								fontWeight: 700,
 								my: 2,
 								color: "white",
@@ -267,7 +265,7 @@ function Projects() {
 								mb: 2,
 								textAlign: "center",
 								fontWeight: 700,
-								color: "black",
+								color: "white",
 								fontSize: { xs: "2rem" },
 							}}
 						>
@@ -275,7 +273,7 @@ function Projects() {
 						</Typography>
 						<Typography
 							variant="body2"
-							sx={{ px: 2, mb: 4, color: "black", fontSize: { xs: "1rem" } }}
+							sx={{ px: 2, mb: 4, color: "#999999", fontSize: { xs: "1rem" } }}
 						>
 							This project is the website you are looking at, built with React
 							and Material UI, integrated with Sanity Studio for content
@@ -287,22 +285,22 @@ function Projects() {
 							spacing={1}
 						>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="REACT"
 								color="primary"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="MATERIAL UI"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="SANITY"
 								color="success"
 							/>
 							<Chip
-								sx={{ backgroundColor: "#6d628c", fontWeight: 700 }}
+								sx={{ backgroundColor: "#8354f8", fontWeight: 700 }}
 								label="NETLIFY"
 								color="success"
 							/>
@@ -314,12 +312,11 @@ function Projects() {
 							variant="outlined"
 							sx={{
 								":hover": {
-									color: "#192d41",
-									borderColor: "#192d41",
-									backgroundColor: "white",
+									backgroundColor: "#333333",
+									borderColor: "#333333",
 								},
-								borderColor: "#192d41",
-								backgroundColor: "#192d41",
+								borderColor: "#262626",
+								backgroundColor: "#262626",
 								fontWeight: 700,
 								my: 2,
 								color: "white",

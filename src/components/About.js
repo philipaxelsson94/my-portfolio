@@ -18,7 +18,7 @@ export default function About() {
 					my: 4,
 					textAlign: "center",
 					fontWeight: 700,
-					color: "#192d41",
+					color: "white",
 					fontSize: { xs: "3rem", md: "3rem" },
 				}}
 			>
@@ -29,7 +29,7 @@ export default function About() {
 					<Grid item md={4} xs={12}>
 						<Card
 							className="aboutUsCard"
-							style={{ height: "100%", backgroundColor: "#ebebeb" }}
+							style={{ height: "100%", backgroundColor: "#262626" }}
 						>
 							<Stack
 								sx={{
@@ -49,7 +49,12 @@ export default function About() {
 							</Stack>
 							<CardContent>
 								<Typography
-									sx={{ textAlign: "center", mb: 2, fontWeight: 700 }}
+									sx={{
+										color: "white",
+										textAlign: "center",
+										mb: 2,
+										fontWeight: 700,
+									}}
 									gutterBottom
 									variant="h5"
 									component="div"
@@ -59,7 +64,7 @@ export default function About() {
 								<Typography
 									variant="body2"
 									sx={{
-										color: "black",
+										color: "#999999",
 										textAlign: "center",
 										fontSize: { xs: "1rem" },
 									}}
@@ -71,7 +76,7 @@ export default function About() {
 
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
-										sx={{ textAlign: "center", color: "black" }}
+										sx={{ textAlign: "center", color: "white" }}
 										gutterBottom
 										variant="h6"
 										component="div"
@@ -79,6 +84,7 @@ export default function About() {
 										Technologies I use
 									</Typography>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -89,8 +95,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -102,6 +107,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -112,8 +118,30 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
+											borderRadius: 2,
+										}}
+									>
+										<Typography noWrap>NextJS</Typography>
+										<Avatar
+											alt="react"
+											src={require("../Assets/nextjs.png")}
+											sx={{ width: 50, height: 50 }}
+										/>
+									</Stack>
+									<Stack
+										className="work-skill-stack"
+										spacing={2}
+										direction="row"
+										sx={{
+											my: 3,
+											pt: 1,
+											pb: 1,
+											pr: 4,
+											pl: 4,
+											justifyContent: "space-between",
+											alignItems: "center",
+
 											borderRadius: 2,
 										}}
 									>
@@ -125,6 +153,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -135,8 +164,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -147,8 +175,9 @@ export default function About() {
 											sx={{ width: 50, height: 50 }}
 										/>
 									</Stack>
-									
+
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -159,8 +188,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -172,6 +200,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -182,8 +211,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -195,6 +223,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -205,8 +234,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -218,6 +246,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -228,8 +257,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -241,6 +269,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -251,8 +280,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -264,6 +292,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -274,8 +303,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -287,6 +315,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -297,8 +326,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -317,7 +345,7 @@ export default function About() {
 					<Grid item md={4} xs={12}>
 						<Card
 							className="aboutUsCard"
-							style={{ height: "100%", backgroundColor: "#ebebeb" }}
+							style={{ height: "100%", backgroundColor: "#262626" }}
 						>
 							<Stack
 								sx={{
@@ -337,7 +365,12 @@ export default function About() {
 							</Stack>
 							<CardContent>
 								<Typography
-									sx={{ textAlign: "center", fontWeight: 700, mb: 2 }}
+									sx={{
+										color: "white",
+										textAlign: "center",
+										fontWeight: 700,
+										mb: 2,
+									}}
 									gutterBottom
 									variant="h5"
 									component="div"
@@ -347,7 +380,7 @@ export default function About() {
 								<Typography
 									variant="body2"
 									sx={{
-										color: "black",
+										color: "#999999",
 										textAlign: "center",
 										fontSize: { xs: "1rem" },
 									}}
@@ -358,7 +391,7 @@ export default function About() {
 								</Typography>
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
-										sx={{ textAlign: "center", color: "black" }}
+										sx={{ textAlign: "center", color: "white" }}
 										gutterBottom
 										variant="h6"
 										component="div"
@@ -366,6 +399,7 @@ export default function About() {
 										Platforms & Software I use
 									</Typography>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -376,8 +410,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -389,6 +422,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -399,8 +433,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -412,6 +445,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -422,8 +456,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -435,6 +468,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -445,8 +479,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -458,6 +491,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -468,8 +502,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -488,7 +521,7 @@ export default function About() {
 					<Grid item md={4} xs={12}>
 						<Card
 							className="aboutUsCard"
-							style={{ height: "100%", backgroundColor: "#ebebeb" }}
+							style={{ height: "100%", backgroundColor: "#262626" }}
 						>
 							<Stack
 								sx={{
@@ -508,7 +541,12 @@ export default function About() {
 							</Stack>
 							<CardContent>
 								<Typography
-									sx={{ textAlign: "center", fontWeight: 700, mb: 2 }}
+									sx={{
+										color: "white",
+										textAlign: "center",
+										fontWeight: 700,
+										mb: 2,
+									}}
 									gutterBottom
 									variant="h5"
 									component="div"
@@ -518,7 +556,7 @@ export default function About() {
 								<Typography
 									variant="body2"
 									sx={{
-										color: "black",
+										color: "#999999",
 										textAlign: "center",
 										fontSize: { xs: "1rem" },
 									}}
@@ -529,7 +567,7 @@ export default function About() {
 								</Typography>
 								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
 									<Typography
-										sx={{ textAlign: "center", color: "black" }}
+										sx={{ textAlign: "center", color: "white" }}
 										gutterBottom
 										variant="h6"
 										component="div"
@@ -537,6 +575,7 @@ export default function About() {
 										Programs I use
 									</Typography>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -547,8 +586,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -560,6 +598,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -570,8 +609,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
@@ -583,6 +621,7 @@ export default function About() {
 										/>
 									</Stack>
 									<Stack
+										className="work-skill-stack"
 										spacing={2}
 										direction="row"
 										sx={{
@@ -593,8 +632,7 @@ export default function About() {
 											pl: 4,
 											justifyContent: "space-between",
 											alignItems: "center",
-											bgcolor: "#f9f9f9",
-											boxShadow: 1,
+
 											borderRadius: 2,
 										}}
 									>
