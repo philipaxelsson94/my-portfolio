@@ -83,7 +83,7 @@ function ResponsiveAppBar() {
 							onClick={toggleDrawer(true)}
 							color="#8354f8"
 						>
-							<MenuIcon />
+							<MenuIcon sx={{ fill: "white" }} />
 						</IconButton>
 					</Box>
 
