@@ -1,563 +1,199 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import CardActionArea from "@mui/material/CardActionArea";
 import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 function MyWork() {
+	const workExperiences = [
+		{
+			company: "Live Arena Technologies",
+			image: "aip5.png",
+			description: "As a Frontend Developer, I worked on building and maintaining scalable user interfaces for their video distribution platforms. I engaged in agile development to deliver responsive, seamless video streaming experiences.",
+			chips: [
+				{ label: "FRONTEND DEVELOPER" }
+			],
+			link: "https://livearena.com/"
+		},
+		{
+			company: "Sanne Alexandra",
+			image: "sann2.png",
+			description: "I manage and maintain the website's overall structure, ensuring optimal performance and user experience through frontend development. Additionally, I focus on driving growth and increasing conversions by leveraging analytics tools and implementing marketing automation",
+			chips: [
+				{ label: "WEB DEVELOPER" },
+				{ label: "ECOMMERCE SITE MANAGER" }
+			],
+			link: "https://sannealexandra.com/"
+		},
+		{
+			company: "HUBSO",
+			image: "hubso.png",
+			description: "At Hubso I'm responsible for frontend and backend architectures, while also managing and optimizing the IT infrastructure to ensure seamless operations. Mostly I work in React.",
+			chips: [
+				{ label: "IT DEVELOPER" },
+				{ label: "FRONTEND" },
+				{ label: "SITE MANAGER" }
+			],
+			link: "https://hubso.com/"
+		},
+		{
+			company: "Festprissen",
+			image: "festprissen.png",
+			description: "This is my side hustle, an affiliate eCommerce business I run in my spare time. I promote products I trust and earn commissions on sales made through my referral links.",
+			chips: [
+				{ label: "AFFILIATE" },
+				{ label: "SITE MANAGER" }
+			],
+			link: "https://festprissen.se/"
+		},
+		{
+			company: "Kejbertconcept",
+			image: "kejbertconcept.png",
+			description: "Sometimes I do som freelancing and at Kejbertconcept I help out with managing the Shopify store and updating the frontend when needed and also other IT specific tasks.",
+			chips: [
+				{ label: "FREELANCING" },
+				{ label: "SITE MANAGER" }
+			],
+			link: "https://kejbertconcept.se/"
+		}
+	];
+
 	return (
 		<Container sx={{ mt: { xs: 0, md: 10 }, mb: 10 }}>
 			<Typography
 				variant="h1"
 				sx={{
-					my: 4,
+					my: 8,
 					textAlign: "center",
-					fontWeight: 700,
+					fontWeight: 800,
 					color: "white",
-					fontSize: { xs: "3rem", md: "3rem" },
+					fontSize: { xs: "3rem", md: "4rem" },
+					letterSpacing: -1
 				}}
 			>
-				WORK
+				WORK EXPERIENCE
 			</Typography>
-			<Grid container spacing={4}>
-				<Grid item md={4} xs={12}>
-					<Card elevation={3}>
-						<CardActionArea className="work-card-action-area">
-							<div className="work-card-media">
-								<CardMedia
-									className="work-card-media-image"
-									component="img"
-									height="200"
-									src={require("../Assets/aip5.png")}
-									alt="green iguana"
-								/>
-							</div>
-							<CardContent>
-								<Typography
-									className="work-card-title"
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									Live Arena Technologies
-								</Typography>
-								<Typography
-									variant="body2"
-									sx={{ color: "#999999" }}
-								></Typography>
 
-								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
+			<Stack spacing={{ xs: 6, md: 10 }} sx={{ mt: 8 }}>
+				{workExperiences.map((work, index) => {
+					const isEven = index % 2 === 0;
+
+					return (
+						<Box
+							key={work.company}
+							sx={{
+								display: "flex",
+								flexDirection: { xs: "column", md: isEven ? "row" : "row-reverse" },
+								backgroundColor: "#161616",
+								borderRadius: 6,
+								overflow: "hidden",
+								boxShadow: "0 10px 30px rgba(0,0,0,0.5)",
+								border: "1px solid rgba(255,255,255,0.05)",
+								transition: "transform 0.3s ease, box-shadow 0.3s ease",
+								":hover": {
+									transform: "translateY(-4px)",
+									boxShadow: "0 20px 40px rgba(0,0,0,0.7)",
+									borderColor: "rgba(255,255,255,0.1)",
+								}
+							}}
+						>
+							{/* Image Container */}
+							<Box
+								sx={{
+									width: { xs: "100%", md: "50%" },
+									backgroundColor: "#111111", // Darker background to frame the image
+									display: "flex",
+									justifyContent: "center",
+									alignItems: "center",
+									p: { xs: 2, md: 4 },
+									minHeight: { xs: "250px", md: "400px" }
+								}}
+							>
+									<Box
+										component="img"
+										alt={work.company}
+										src={require(`../Assets/${work.image}`)}
+										sx={{ 
+											width: "100%", 
+											height: "100%", 
+											maxHeight: { xs: "300px", md: "450px" },
+											objectFit: "contain", 
+											display: "block",
+											borderRadius: 2,
+											boxShadow: "0 4px 20px rgba(0,0,0,0.3)"
 										}}
-										label="FRONTEND DEVELOPER"
-										color="primary"
 									/>
-								</Stack>
-								<Grid container spacing={2}>
-									<Grid item xs={6}>
-										<Button
-											href="https://livearena.com/"
-											target="_blank"
-											variant="outlined"
+							</Box>
+
+							{/* Content Container */}
+							<Box 
+								sx={{
+									width: { xs: "100%", md: "50%" },
+									p: { xs: 4, md: 6 },
+									display: "flex",
+									flexDirection: "column",
+									justifyContent: "center"
+								}}
+							>
+								<Typography variant="h3" sx={{ color: "white", fontWeight: 800, mb: 2, fontSize: { xs: "2rem", md: "2.5rem" }, letterSpacing: -0.5 }}>
+									{work.company}
+								</Typography>
+
+								{work.description && (
+									<Typography variant="body1" sx={{ color: "#aaaaaa", mb: 4, fontSize: { xs: "1rem", md: "1.1rem" }, lineHeight: 1.7 }}>
+										{work.description}
+									</Typography>
+								)}
+
+								<Stack direction="row" spacing={1.5} flexWrap="wrap" useFlexGap sx={{ mb: 4 }}>
+									{work.chips.map((chip, chipIndex) => (
+										<Chip
+											key={chipIndex}
+											label={chip.label}
 											sx={{
-												":hover": {
-													backgroundColor: "#333333",
-													borderColor: "#333333",
-												},
-												borderColor: "#262626",
-												backgroundColor: "#262626",
-												fontWeight: 700,
-												my: 2,
+												backgroundColor: "#8354F8", // All exact same purple
 												color: "white",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-								</Grid>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-				<Grid item md={4} xs={12}>
-					<Card elevation={3}>
-						<CardActionArea className="work-card-action-area">
-							<div className="work-card-media">
-								<CardMedia
-									className="work-card-media-image"
-									component="img"
-									height="200"
-									src={require("../Assets/lxa2.png")}
-									alt="green iguana"
-								/>
-							</div>
-
-							<CardContent>
-								<Typography
-									className="work-card-title"
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									LXA The Label
-								</Typography>
-								<Typography variant="body2" sx={{ color: "#999999" }}>
-									I manage and maintain the website's overall structure,
-									ensuring optimal performance and user experience through
-									frontend development. Additionally, I focus on driving growth
-									and increasing conversions by leveraging analytics tools and
-									implementing marketing automation
-								</Typography>
-
-								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="WEB DEVELOPER"
-										color="primary"
-									/>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="ECOMMERCE SITE MANAGER"
-										color="success"
-									/>
-								</Stack>
-								<Grid container spacing={2}>
-									<Grid item xs={6}>
-										<Button
-											href="https://lxathelabel.com/"
-											target="_blank"
-											variant="outlined"
-											sx={{
-												":hover": {
-													backgroundColor: "#333333",
-													borderColor: "#333333",
-												},
-												borderColor: "#262626",
-												backgroundColor: "#262626",
 												fontWeight: 700,
-												my: 2,
-												color: "white",
+												fontSize: "0.75rem",
+												borderRadius: 2,
+												px: 1,
+												border: "none",
 											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-								</Grid>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-
-				<Grid item md={4} xs={12}>
-					<Card elevation={3}>
-						<CardActionArea className="work-card-action-area">
-							<div className="work-card-media">
-								<CardMedia
-									className="work-card-media-image"
-									component="img"
-									height="200"
-									src={require("../Assets/sann2.png")}
-									alt="green iguana"
-								/>
-							</div>
-
-							<CardContent>
-								<Typography
-									className="work-card-title"
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									Sanne Alexandra
-								</Typography>
-								<Typography variant="body2" sx={{ color: "#999999" }}>
-									I manage and maintain the website's overall structure,
-									ensuring optimal performance and user experience through
-									frontend development. Additionally, I focus on driving growth
-									and increasing conversions by leveraging analytics tools and
-									implementing marketing automation
-								</Typography>
-								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="WEB DEVELOPER"
-										color="primary"
-									/>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="ECOMMERCE SITE MANAGER"
-										color="success"
-									/>
-								</Stack>
-								<Grid container spacing={2}>
-									<Grid item xs={6}>
-										<Button
-											href="https://sannealexandra.com/"
-											target="_blank"
-											variant="outlined"
-											sx={{
-												":hover": {
-													backgroundColor: "#333333",
-													borderColor: "#333333",
-												},
-												borderColor: "#262626",
-												backgroundColor: "#262626",
-												fontWeight: 700,
-												my: 2,
-												color: "white",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-								</Grid>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-
-				<Grid item md={4} xs={12}>
-					<Card elevation={3}>
-						<CardActionArea className="work-card-action-area">
-							<div className="work-card-media">
-								<CardMedia
-									className="work-card-media-image"
-									component="img"
-									height="200"
-									src={require("../Assets/lecap2.png")}
-								/>
-							</div>
-
-							<CardContent>
-								<Typography
-									className="work-card-title"
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									Le Capsole
-								</Typography>
-								<Typography variant="body2" sx={{ color: "#999999" }}>
-									I manage and maintain the website's overall structure,
-									ensuring optimal performance and user experience through
-									frontend development. Additionally, I focus on driving growth
-									and increasing conversions by leveraging analytics tools and
-									implementing marketing automation
-								</Typography>
-								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="WEB DEVELOPER"
-										color="primary"
-									/>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="ECOMMERCE SITE MANAGER"
-										color="success"
-									/>
-								</Stack>
-								<Grid container spacing={2}>
-									<Grid item xs={6}>
-										<Button
-											href="https://lecapsole.com/"
-											target="_blank"
-											variant="outlined"
-											sx={{
-												":hover": {
-													backgroundColor: "#333333",
-													borderColor: "#333333",
-												},
-												borderColor: "#262626",
-												backgroundColor: "#262626",
-												fontWeight: 700,
-												my: 2,
-												color: "white",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-								</Grid>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-				<Grid item md={4} xs={12}>
-					<Card elevation={3}>
-						<CardActionArea className="work-card-action-area">
-							<div className="work-card-media">
-								<CardMedia
-									className="work-card-media-image"
-									component="img"
-									height="200"
-									src={require("../Assets/hubso.png")}
-								/>
-							</div>
-
-							<CardContent>
-								<Typography
-									className="work-card-title"
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									HUBSO
-								</Typography>
-								<Typography variant="body2" sx={{ color: "#999999" }}>
-									At Hubso I'm responsible for frontend and backend
-									architectures, while also managing and optimizing the IT
-									infrastructure to ensure seamless operations. Mostly I work in
-									React.
-								</Typography>
-								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="IT DEVELOPER"
-										color="primary"
-									/>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="FRONTEND"
-										color="success"
-									/>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="SITE MANAGER"
-										color="success"
-									/>
-								</Stack>
-								<Grid container spacing={2}>
-									<Grid item xs={6}>
-										<Button
-											href="https://hubso.com/"
-											target="_blank"
-											variant="outlined"
-											sx={{
-												":hover": {
-													backgroundColor: "#333333",
-													borderColor: "#333333",
-												},
-												borderColor: "#262626",
-												backgroundColor: "#262626",
-												fontWeight: 700,
-												my: 2,
-												color: "white",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-								</Grid>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-				<Grid item md={4} xs={12}>
-					<Card elevation={3}>
-						<CardActionArea className="work-card-action-area">
-							<div className="work-card-media">
-								<CardMedia
-									className="work-card-media-image"
-									component="img"
-									height="200"
-									src={require("../Assets/festprissen.png")}
-								/>
-							</div>
-
-							<CardContent>
-								<Typography
-									className="work-card-title"
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									Festprissen
-								</Typography>
-								<Typography variant="body2" sx={{ color: "#999999" }}>
-									This is my side hustle, an affiliate eCommerce business I run
-									in my spare time. I promote products I trust and earn
-									commissions on sales made through my referral links.
-								</Typography>
-								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="AFFILIATE"
-										color="primary"
-									/>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="SITE MANAGER"
-										color="success"
-									/>
+										/>
+									))}
 								</Stack>
 
-								<Grid container spacing={2}>
-									<Grid item xs={6}>
-										<Button
-											href="https://festprissen.se/"
-											target="_blank"
-											variant="outlined"
-											sx={{
-												":hover": {
-													backgroundColor: "#333333",
-													borderColor: "#333333",
-												},
-												borderColor: "#262626",
-												backgroundColor: "#262626",
-												fontWeight: 700,
-												my: 2,
-												color: "white",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-								</Grid>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-				<Grid item md={4} xs={12}>
-					<Card elevation={3}>
-						<CardActionArea className="work-card-action-area">
-							<div className="work-card-media">
-								<CardMedia
-									className="work-card-media-image"
-									component="img"
-									height="200"
-									src={require("../Assets/kejbertconcept.png")}
-								/>
-							</div>
-
-							<CardContent>
-								<Typography
-									className="work-card-title"
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									Kejbertconcept
-								</Typography>
-								<Typography variant="body2" sx={{ color: "#999999" }}>
-									Sometimes I do som freelancing and at Kejbertconcept I help
-									out with managing the Shopify store and updating the frontend
-									when needed and also other IT specific tasks.
-								</Typography>
-								<Stack sx={{ my: 2 }} direction="row" spacing={1}>
-									<Chip
-										className="work-category-chip"
+								<Box>
+									<Button
+										href={work.link}
+										target="_blank"
+										variant="contained"
 										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
+											backgroundColor: "white",
+											color: "black",
+											fontWeight: 800,
+											px: 4,
+											py: 1.5,
+											borderRadius: "50px",
+											textTransform: "none",
+											fontSize: "1rem",
+											transition: "all 0.2s ease",
+											":hover": {
+												backgroundColor: "#e0e0e0",
+												transform: "scale(1.02)"
+											}
 										}}
-										label="FREELANCING"
-										color="primary"
-									/>
-									<Chip
-										className="work-category-chip"
-										sx={{
-											backgroundColor: "#8354F8",
-											fontWeight: 700,
-											fontSize: "0.7rem",
-										}}
-										label="SITE MANAGER"
-										color="success"
-									/>
-								</Stack>
-								<Grid container spacing={2}>
-									<Grid item xs={6}>
-										<Button
-											href="https://kejbertconcept.se/"
-											target="_blank"
-											variant="outlined"
-											sx={{
-												":hover": {
-													backgroundColor: "#333333",
-													borderColor: "#333333",
-												},
-												borderColor: "#262626",
-												backgroundColor: "#262626",
-												fontWeight: 700,
-												my: 2,
-												color: "white",
-											}}
-										>
-											Visit website
-										</Button>
-									</Grid>
-								</Grid>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-			</Grid>
+									>
+										Visit Website
+									</Button>
+								</Box>
+							</Box>
+						</Box>
+					);
+				})}
+			</Stack>
 		</Container>
 	);
 }

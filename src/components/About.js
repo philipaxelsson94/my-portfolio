@@ -1,13 +1,12 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import TerminalIcon from "@mui/icons-material/Terminal";
 
 export default function About() {
 	return (
@@ -25,629 +24,261 @@ export default function About() {
 				MY SKILLS
 			</Typography>
 			<Container sx={{ mb: { xs: 2, mb: 10 } }}>
-				<Grid container spacing={4}>
-					<Grid item md={4} xs={12}>
-						<Card
-							className="aboutUsCard"
-							style={{ height: "100%", backgroundColor: "#262626" }}
-						>
-							<Stack
-								sx={{
-									mt: 4,
-									mb: 4,
-									justifyContent: "center",
-									alignItems: "center",
-								}}
-								direction="row"
-								spacing={2}
-							>
-								<Avatar
-									alt="UX/UI"
-									src={require("../Assets/frontend2.png")}
-									sx={{ width: 80, height: 80 }}
-								/>
-							</Stack>
-							<CardContent>
-								<Typography
-									sx={{
-										color: "white",
-										textAlign: "center",
-										mb: 2,
-										fontWeight: 700,
-									}}
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
+				<Box
+					sx={{
+						display: "grid",
+						gap: 3,
+						gridTemplateColumns: { xs: "1fr", md: "1.5fr 1fr" }, // Keep 1.5fr and 1fr for asymmetrical look, we will just wrap rows naturally
+						gridAutoRows: "minmax(min-content, max-content)",
+					}}
+				>
+					{/* Hero Bento Box: Frontend Developer (Spans 2 columns on Desktop if we want, or takes the larger 1.5fr fraction) */}
+					<Card
+						elevation={0}
+						sx={{
+							backgroundColor: "#111111",
+							border: "1px solid rgba(255,255,255,0.05)",
+							borderRadius: 4,
+							gridColumn: { xs: "1", md: "1 / span 2" }, // Make Frontend massive, full width of grid on top row
+							p: 4,
+						}}
+					>
+						<Stack direction={{ xs: "column", md: "row" }} spacing={4} alignItems="center">
+							<Avatar
+								alt="Frontend"
+								src={require("../Assets/frontend2.png")}
+								sx={{ width: 100, height: 100 }}
+							/>
+							<Box>
+								<Typography variant="h3" sx={{ color: "white", fontWeight: 700, mb: 1, textAlign: { xs: "center", md: "left" } }}>
 									Frontend Developer
 								</Typography>
-								<Typography
-									variant="body2"
-									sx={{
-										color: "#999999",
-										textAlign: "center",
-										fontSize: { xs: "1rem" },
-									}}
-								>
+								<Typography variant="body1" sx={{ color: "#999999", mb: 3, textAlign: { xs: "center", md: "left" } }}>
 									I am passionate about frontend development, I’ve worked with
 									various frameworks and currently focus on creating dynamic,
 									user-friendly interfaces using modern tools.
 								</Typography>
+							</Box>
+						</Stack>
 
-								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
-									<Typography
-										sx={{ textAlign: "center", color: "white" }}
-										gutterBottom
-										variant="h6"
-										component="div"
-									>
-										Technologies I use
-									</Typography>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											my: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
+						<Typography variant="subtitle2" sx={{ color: "#ffffff", fontWeight: 700, mt: 4, mb: 2, textTransform: "uppercase", letterSpacing: 2 }}>
+							Core Technologies
+						</Typography>
 
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>React</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/react2.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											my: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>NextJS</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/nextjs.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											my: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Electron</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/electron.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											my: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Aurelia</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/aurelia.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>HTML</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/html.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>CSS</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/css.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Github</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/github.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>VS code</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/vscode.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Postman</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/postman.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Sanity</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/sanity.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Netlify</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/netlify.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-								</Box>
-							</CardContent>
-						</Card>
-					</Grid>
-
-					<Grid item md={4} xs={12}>
-						<Card
-							className="aboutUsCard"
-							style={{ height: "100%", backgroundColor: "#262626" }}
+						<Box
+							sx={{
+								display: "flex",
+								flexWrap: "wrap",
+								gap: 2,
+							}}
 						>
-							<Stack
-								sx={{
-									mt: 4,
-									mb: 4,
-									justifyContent: "center",
-									alignItems: "center",
-								}}
-								direction="row"
-								spacing={2}
+							{[
+								{ name: "React", src: "react2.png" },
+								{ name: "NextJS", src: "nextjs.png" },
+								{ name: "Electron", src: "electron.png" },
+								{ name: "Aurelia", src: "aurelia.png" },
+								{ name: "HTML", src: "html.png" },
+								{ name: "CSS", src: "css.png" },
+								{ name: "Github", src: "github.png" },
+								{ name: "VS Code", src: "vscode.png" },
+								{ name: "Postman", src: "postman.png" },
+								{ name: "Sanity", src: "sanity.png" },
+								{ name: "Netlify", src: "netlify.png" },
+							].map((tech) => (
+								<Stack
+									key={tech.name}
+									direction="row"
+									spacing={1.5}
+									alignItems="center"
+									sx={{
+										backgroundColor: "#1a1a1a",
+										border: "1px solid rgba(255,255,255,0.05)",
+										borderRadius: 2,
+										py: 1,
+										px: 2,
+									}}
+								>
+									<Avatar alt={tech.name} src={require(`../Assets/${tech.src}`)} sx={{ width: 24, height: 24 }} />
+									<Typography sx={{ color: "white", fontSize: "0.85rem", fontWeight: 600 }}>{tech.name}</Typography>
+								</Stack>
+							))}
+						</Box>
+					</Card>
+
+					{/* Bento Item 2: Ecommerce */}
+					<Card
+						elevation={0}
+						sx={{
+							backgroundColor: "#111111",
+							border: "1px solid rgba(255,255,255,0.05)",
+							borderRadius: 4,
+							p: 4,
+							display: "flex",
+							flexDirection: "column"
+						}}
+					>
+						<Stack direction="row" spacing={3} alignItems="center" sx={{ mb: 3 }}>
+							<Avatar
+								alt="Ecommerce"
+								src={require("../Assets/ecom2.png")}
+								sx={{ width: 60, height: 60 }}
+							/>
+							<Typography variant="h4" sx={{ color: "white", fontWeight: 700 }}>
+								Ecommerce
+							</Typography>
+						</Stack>
+						<Typography variant="body2" sx={{ color: "#999999", mb: 4, flexGrow: 1 }}>
+							Born and raised in Ecommerce. This is my true passion and I
+							have worked with various platforms and currently I am working
+							with Shopify.
+						</Typography>
+
+						<Typography variant="subtitle2" sx={{ color: "#ffffff", fontWeight: 700, mb: 2, textTransform: "uppercase", letterSpacing: 2 }}>
+							Platforms & Tools
+						</Typography>
+
+						<Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
+							{[
+								{ name: "Shopify", src: "shopify.png" },
+								{ name: "WooCommerce", src: "woo.png" },
+								{ name: "Wordpress", src: "wordpress.png" },
+								{ name: "Analytics", src: "analytics.png" },
+								{ name: "Klaviyo", src: "klaviyo4.png" },
+							].map((tech) => (
+								<Stack
+									key={tech.name}
+									direction="row"
+									spacing={1.5}
+									alignItems="center"
+									sx={{
+										backgroundColor: "#1a1a1a",
+										border: "1px solid rgba(255,255,255,0.05)",
+										borderRadius: 2,
+										py: 1,
+										px: 2,
+									}}
+								>
+									<Avatar alt={tech.name} src={require(`../Assets/${tech.src}`)} sx={{ width: 24, height: 24 }} />
+									<Typography sx={{ color: "white", fontSize: "0.85rem", fontWeight: 600 }}>{tech.name}</Typography>
+								</Stack>
+							))}
+						</Box>
+					</Card>
+
+					{/* Bento Item 3: UX/UI */}
+					<Card
+						elevation={0}
+						sx={{
+							backgroundColor: "#111111",
+							border: "1px solid rgba(255,255,255,0.05)",
+							borderRadius: 4,
+							p: 4,
+							display: "flex",
+							flexDirection: "column"
+						}}
+					>
+						<Stack direction="row" spacing={3} alignItems="center" sx={{ mb: 3 }}>
+							<Avatar
+								alt="UX/UI"
+								src={require("../Assets/uxui.png")}
+								sx={{ width: 60, height: 60 }}
+							/>
+							<Typography variant="h4" sx={{ color: "white", fontWeight: 700 }}>
+								UX/UI Design
+							</Typography>
+						</Stack>
+						<Typography variant="body2" sx={{ color: "#999999", mb: 4, flexGrow: 1 }}>
+							Interested in UX/UI design, I specialize in creating
+							intuitive, user-centered interfaces that enhance functionality
+							and user experience, while aligning with business goals.
+						</Typography>
+
+						<Typography variant="subtitle2" sx={{ color: "#ffffff", fontWeight: 700, mb: 2, textTransform: "uppercase", letterSpacing: 2 }}>
+							Design Software
+						</Typography>
+						
+						<Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
+							{[
+								{ name: "Photoshop", src: "photoshop1.png" },
+								{ name: "Affinity", src: "affinity.png" },
+								{ name: "Figma", src: "figma.png" },
+							].map((tech) => (
+								<Stack
+									key={tech.name}
+									direction="row"
+									spacing={1.5}
+									alignItems="center"
+									sx={{
+										backgroundColor: "#1a1a1a",
+										border: "1px solid rgba(255,255,255,0.05)",
+										borderRadius: 2,
+										py: 1,
+										px: 2,
+									}}
+								>
+									<Avatar alt={tech.name} src={require(`../Assets/${tech.src}`)} sx={{ width: 24, height: 24 }} />
+									<Typography sx={{ color: "white", fontSize: "0.85rem", fontWeight: 600 }}>{tech.name}</Typography>
+								</Stack>
+							))}
+						</Box>
+					</Card>
+
+					{/* Bento Item 4: Backend */}
+					<Card
+						elevation={0}
+						sx={{
+							backgroundColor: "#111111",
+							border: "1px solid rgba(255,255,255,0.05)",
+							borderRadius: 4,
+							p: 4,
+							display: "flex",
+							flexDirection: "column"
+						}}
+					>
+						<Stack direction="row" spacing={3} alignItems="center" sx={{ mb: 3 }}>
+							<Avatar
+								sx={{ width: 60, height: 60, backgroundColor: "#8354F8" }}
 							>
-								<Avatar
-									alt="UX/UI"
-									src={require("../Assets/ecom2.png")}
-									sx={{ width: 80, height: 80 }}
-								/>
-							</Stack>
-							<CardContent>
-								<Typography
+								<TerminalIcon sx={{ fontSize: 32, color: "white" }} />
+							</Avatar>
+							<Typography variant="h4" sx={{ color: "white", fontWeight: 700 }}>
+								Backend Development
+							</Typography>
+						</Stack>
+						<Typography variant="body2" sx={{ color: "#999999", mb: 4, flexGrow: 1 }}>
+							Beyond the frontend, I also have experience designing and implementing backend logic, 
+							writing scripts, and developing stable APIs using object-oriented principles.
+						</Typography>
+
+						<Typography variant="subtitle2" sx={{ color: "#ffffff", fontWeight: 700, mb: 2, textTransform: "uppercase", letterSpacing: 2 }}>
+							Languages & Frameworks
+						</Typography>
+						
+						<Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
+							{[
+								{ name: "Python", src: "python.png" },
+								{ name: "Java", src: "java.png" },
+							].map((tech) => (
+								<Stack
+									key={tech.name}
+									direction="row"
+									spacing={1.5}
+									alignItems="center"
 									sx={{
-										color: "white",
-										textAlign: "center",
-										fontWeight: 700,
-										mb: 2,
-									}}
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									Ecommerce
-								</Typography>
-								<Typography
-									variant="body2"
-									sx={{
-										color: "#999999",
-										textAlign: "center",
-										fontSize: { xs: "1rem" },
-									}}
-								>
-									Born and raised in Ecommerce. This is my true passion and I
-									have worked with various platforms and currently I am working
-									with Shopify.
-								</Typography>
-								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
-									<Typography
-										sx={{ textAlign: "center", color: "white" }}
-										gutterBottom
-										variant="h6"
-										component="div"
-									>
-										Platforms & Software I use
-									</Typography>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											my: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Shopify</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/shopify.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>WooCommerce</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/woo.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Wordpress</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/wordpress.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Google Analytics</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/analytics.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Klaviyo</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/klaviyo4.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-								</Box>
-							</CardContent>
-						</Card>
-					</Grid>
-
-					<Grid item md={4} xs={12}>
-						<Card
-							className="aboutUsCard"
-							style={{ height: "100%", backgroundColor: "#262626" }}
-						>
-							<Stack
-								sx={{
-									mt: 4,
-									mb: 4,
-									justifyContent: "center",
-									alignItems: "center",
-								}}
-								direction="row"
-								spacing={2}
-							>
-								<Avatar
-									alt="UX/UI"
-									src={require("../Assets/uxui.png")}
-									sx={{ width: 80, height: 80 }}
-								/>
-							</Stack>
-							<CardContent>
-								<Typography
-									sx={{
-										color: "white",
-										textAlign: "center",
-										fontWeight: 700,
-										mb: 2,
-									}}
-									gutterBottom
-									variant="h5"
-									component="div"
-								>
-									UX/UI Designer
-								</Typography>
-								<Typography
-									variant="body2"
-									sx={{
-										color: "#999999",
-										textAlign: "center",
-										fontSize: { xs: "1rem" },
+										backgroundColor: "#1a1a1a",
+										border: "1px solid rgba(255,255,255,0.05)",
+										borderRadius: 2,
+										py: 1,
+										px: 2,
 									}}
 								>
-									Interested in UX/UI design, I specialize in creating
-									intuitive, user-centered interfaces that enhance functionality
-									and user experience, while aligning with business goals.
-								</Typography>
-								<Box sx={{ my: 4, mx: "auto", p: 2 }}>
-									<Typography
-										sx={{ textAlign: "center", color: "white" }}
-										gutterBottom
-										variant="h6"
-										component="div"
-									>
-										Programs I use
-									</Typography>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											my: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Photoshop</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/photoshop1.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Affinity Designer</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/affinity.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-									<Stack
-										className="work-skill-stack"
-										spacing={2}
-										direction="row"
-										sx={{
-											mt: 3,
-											pt: 1,
-											pb: 1,
-											pr: 4,
-											pl: 4,
-											justifyContent: "space-between",
-											alignItems: "center",
-
-											borderRadius: 2,
-										}}
-									>
-										<Typography noWrap>Figma</Typography>
-										<Avatar
-											alt="react"
-											src={require("../Assets/figma.png")}
-											sx={{ width: 50, height: 50 }}
-										/>
-									</Stack>
-								</Box>
-							</CardContent>
-						</Card>
-					</Grid>
-				</Grid>
+									<Avatar alt={tech.name} src={require(`../Assets/${tech.src}`)} sx={{ width: 24, height: 24 }} />
+									<Typography sx={{ color: "white", fontSize: "0.85rem", fontWeight: 600 }}>{tech.name}</Typography>
+								</Stack>
+							))}
+						</Box>
+					</Card>
+				</Box>
 			</Container>
 		</Box>
 	);

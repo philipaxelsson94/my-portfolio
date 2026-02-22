@@ -3,7 +3,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
 
 import Chip from "@mui/material/Chip";
 import Box from "@mui/material/Box";
@@ -31,7 +30,7 @@ export default function ActionAreaCard({ title, hp, desc }) {
 				onClick={handleOpen}
 				sx={{ maxWidth: 345, height: 120, backgroundColor: "#1c2233" }}
 			>
-				<CardActionArea>
+				<div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
 					<CardContent>
 						<Box sx={{ display: "flex", justifyContent: "space-between" }}>
 							<Typography
@@ -61,7 +60,7 @@ export default function ActionAreaCard({ title, hp, desc }) {
 							{desc}
 						</Typography>
 					</CardContent>
-				</CardActionArea>
+				</div>
 			</Card>
 			<Modal
 				open={open}
